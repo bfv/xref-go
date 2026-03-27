@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/bfv/xref/internal/config"
+	"github.com/bfv/xref/internal/datafile"
 	"github.com/spf13/cobra"
 )
 
@@ -14,22 +14,10 @@ func NewShowCmd() *cobra.Command {
 		Use:   "show",
 		Short: "Show parsed xref data for a source file",
 		RunE: func(cmd *cobra.Command, args []string) error {
-			repoName, _ := cmd.Flags().GetString("name")
+			input, _ := cmd.Flags().GetString("input")
 			source, _ := cmd.Flags().GetString("source")
 
-			cfg, err := config.NewConfig()
-			if err != nil {
-				return err
-			}
-
-			if repoName == "" {
-				repoName = cfg.Data.Current
-			}
-			if repoName == "" {
-				return fmt.Errorf("no repo specified and no current repo set")
-			}
-
-			xrefdata, err := cfg.ReadRepoData(repoName)
+			xrefdata, err := datafile.Load(input)
 			if err != nil {
 				return err
 			}
@@ -57,7 +45,7 @@ func NewShowCmd() *cobra.Command {
 		},
 	}
 
-	cmd.Flags().StringP("name", "n", "", "Repository name (defaults to current)")
+	cmd.Flags().StringP("input", "i", datafile.DefaultDataFile, "Input JSON data file")
 	cmd.Flags().StringP("source", "s", "", "Source file to show details for")
 
 	return cmd

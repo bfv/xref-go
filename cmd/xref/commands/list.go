@@ -3,7 +3,7 @@ package commands
 import (
 	"fmt"
 
-	"github.com/bfv/xref/internal/config"
+	"github.com/bfv/xref/internal/datafile"
 	"github.com/bfv/xref/internal/searcher"
 	"github.com/spf13/cobra"
 )
@@ -12,25 +12,13 @@ import (
 func NewListCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "list",
-		Short: "List databases or tables in a repository",
+		Short: "List databases or tables",
 		RunE: func(cmd *cobra.Command, args []string) error {
-			repoName, _ := cmd.Flags().GetString("name")
+			input, _ := cmd.Flags().GetString("input")
 			listDbs, _ := cmd.Flags().GetBool("databases")
 			listTables, _ := cmd.Flags().GetBool("tables")
 
-			cfg, err := config.NewConfig()
-			if err != nil {
-				return err
-			}
-
-			if repoName == "" {
-				repoName = cfg.Data.Current
-			}
-			if repoName == "" {
-				return fmt.Errorf("no repo specified and no current repo set")
-			}
-
-			xrefdata, err := cfg.ReadRepoData(repoName)
+			xrefdata, err := datafile.Load(input)
 			if err != nil {
 				return err
 			}
@@ -59,7 +47,7 @@ func NewListCmd() *cobra.Command {
 		},
 	}
 
-	cmd.Flags().StringP("name", "n", "", "Repository name (defaults to current)")
+	cmd.Flags().StringP("input", "i", datafile.DefaultDataFile, "Input JSON data file")
 	cmd.Flags().Bool("databases", false, "List database names")
 	cmd.Flags().Bool("tables", false, "List table names")
 
