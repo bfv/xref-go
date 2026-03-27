@@ -1,0 +1,49 @@
+version: 2
+
+builds:
+  - id: <<project_name>>
+    main: ./cmd/<<project_name>>
+    binary: <<project_name>>
+    ldflags:
+      - -X main.version={{.Version}} -w -s
+    env:
+      - CGO_ENABLED=0
+    goos:
+      - windows
+      - linux
+    goarch:
+      - amd64
+
+archives:
+  - id: <<project_name>>
+    formats:
+      - tar.gz
+    format_overrides:
+      - goos: windows
+        formats:
+          - zip
+    files:
+      - README.md
+      - LICENSE
+
+sboms:
+  - artifacts: archive
+    documents:
+      - >-
+        {{ .ProjectName }}_{{ .Version }}_{{ .Os }}_{{ .Arch }}.sbom.json
+
+release:
+  prerelease: auto  # detecteert '-rc' automatisch
+
+dockers:
+  - image_templates:
+      - "devbfvio/<<project_name>>:{{ .Version }}"
+      - "devbfvio/<<project_name>>:latest"
+    dockerfile: Dockerfile
+    build_flag_templates:
+      - "--label=org.opencontainers.image.version={{ .Version }}"
+      - "--label=org.opencontainers.image.created={{ .Date }}"
+      - "--label=org.opencontainers.image.source=https://github.com/bfv/<<project_name>>"
+    extra_files:
+      - README.md
+      - LICENSE
