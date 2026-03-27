@@ -1,0 +1,7 @@
+C:\dev\go\xref\4gl\db\delete-customer.p C:\dev\go\xref\4gl\db\delete-customer.p 1 COMPILE C:\dev\go\xref\4gl/db\delete-customer.p
+C:\dev\go\xref\4gl\db\delete-customer.p C:\dev\go\xref\4gl\db\delete-customer.p 1 CPINTERNAL UTF-8
+C:\dev\go\xref\4gl\db\delete-customer.p C:\dev\go\xref\4gl\db\delete-customer.p 1 CPSTREAM UTF-8
+C:\dev\go\xref\4gl\db\delete-customer.p C:\dev\go\xref\4gl\db\delete-customer.p 1 STRING "Customer" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\db\delete-customer.p C:\dev\go\xref\4gl\db\delete-customer.p 1 ACCESS sports2000.Customer CustNum 
+C:\dev\go\xref\4gl\db\delete-customer.p C:\dev\go\xref\4gl\db\delete-customer.p 1 SEARCH sports2000.Customer CustNum
+C:\dev\go\xref\4gl\db\delete-customer.p C:\dev\go\xref\4gl\db\delete-customer.p 2 DELETE sports2000.Customer 

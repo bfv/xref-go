@@ -1,34 +1,34 @@
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 1 COMPILE C:\dev\node\xrefparser\4gl/oo\Person.cls
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 1 CPINTERNAL UTF-8
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 1 CPSTREAM UTF-8
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 14 BLOCK-LEVEL ON ERROR UNDO, THROW
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 16 CLASS oo.Person,,,,,,
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 16 STRING "oo.Person" 9 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 18 STRING "FirstName" 9 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 18 PROPERTY PUBLIC,,,,,FirstName
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 19 STRING "LastName" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 19 PROPERTY PUBLIC,,,,,LastName
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 20 STRING "BirthDate" 9 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 20 PROPERTY PUBLIC,,,,,BirthDate
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 22 STRING "HomeAddress" 11 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 22 PROPERTY PUBLIC,,,,,HomeAddress
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 25 ACCESS INHERITED-PROPERTY oo.Person:HomeAddress
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 25 UPDATE PUBLIC-PROPERTY oo.Person:HomeAddress 
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 26 CONSTRUCTOR PUBLIC,,,,Person,void,
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 26 STRING "PERSON" 6 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 29 ACCESS INHERITED-PROPERTY oo.Person:FirstName
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 29 ACCESS INHERITED-PROPERTY oo.Person:LastName
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 29 ACCESS INHERITED-PROPERTY oo.Person:HomeAddress
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 29 STRING "&1 &2" 5 NONE TRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 29 STRING " " 1 NONE TRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 29 ACCESS INHERITED-PROPERTY oo.Person:HomeAddress
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 30 METHOD PUBLIC,,OVERRIDE,,,ToString,character,
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 30 STRING "TOSTRING" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 33 ACCESS INHERITED-PROPERTY oo.Person:HomeAddress
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 34 ACCESS INHERITED-PROPERTY oo.Person:HomeAddress
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 34 ACCESS PUBLIC-PROPERTY oo.Address:City
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 35 METHOD PUBLIC,,,,,GetHomeCity,character,
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 35 STRING "GETHOMECITY" 11 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 25 NEW oo.Address
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 29 INVOKE oo.Address:GetAdress
-C:\dev\node\xrefparser\4gl\oo\Person.cls C:\dev\node\xrefparser\4gl\oo\Person.cls 33 INVOKE oo.Address:ToString
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 1 COMPILE C:\dev\go\xref\4gl/oo\Person.cls
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 1 CPINTERNAL UTF-8
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 1 CPSTREAM UTF-8
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 14 BLOCK-LEVEL ON ERROR UNDO, THROW
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 16 CLASS oo.Person,,,,,,
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 16 STRING "oo.Person" 9 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 18 STRING "FirstName" 9 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 18 PROPERTY PUBLIC,,,,,FirstName
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 19 STRING "LastName" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 19 PROPERTY PUBLIC,,,,,LastName
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 20 STRING "BirthDate" 9 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 20 PROPERTY PUBLIC,,,,,BirthDate
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 22 STRING "HomeAddress" 11 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 22 PROPERTY PUBLIC,,,,,HomeAddress
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 25 ACCESS INHERITED-PROPERTY oo.Person:HomeAddress
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 25 UPDATE PUBLIC-PROPERTY oo.Person:HomeAddress 
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 26 CONSTRUCTOR PUBLIC,,,,Person,void,
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 26 STRING "PERSON" 6 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 29 ACCESS INHERITED-PROPERTY oo.Person:FirstName
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 29 ACCESS INHERITED-PROPERTY oo.Person:LastName
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 29 ACCESS INHERITED-PROPERTY oo.Person:HomeAddress
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 29 STRING "&1 &2" 5 NONE TRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 29 STRING " " 1 NONE TRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 29 ACCESS INHERITED-PROPERTY oo.Person:HomeAddress
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 30 METHOD PUBLIC,,OVERRIDE,,,ToString,character,
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 30 STRING "TOSTRING" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 33 ACCESS INHERITED-PROPERTY oo.Person:HomeAddress
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 34 ACCESS INHERITED-PROPERTY oo.Person:HomeAddress
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 34 ACCESS PUBLIC-PROPERTY oo.Address:City
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 35 METHOD PUBLIC,,,,,GetHomeCity,character,
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 35 STRING "GETHOMECITY" 11 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 25 NEW oo.Address
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 29 INVOKE oo.Address:GetAdress
+C:\dev\go\xref\4gl\oo\Person.cls C:\dev\go\xref\4gl\oo\Person.cls 33 INVOKE oo.Address:ToString

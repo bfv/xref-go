@@ -1,15 +1,15 @@
-C:\dev\node\xrefparser\4gl\tt\deletett.p C:\dev\node\xrefparser\4gl\tt\deletett.p 1 COMPILE C:\dev\node\xrefparser\4gl/tt\deletett.p
-C:\dev\node\xrefparser\4gl\tt\deletett.p C:\dev\node\xrefparser\4gl\tt\deletett.p 1 CPINTERNAL UTF-8
-C:\dev\node\xrefparser\4gl\tt\deletett.p C:\dev\node\xrefparser\4gl\tt\deletett.p 1 CPSTREAM UTF-8
-C:\dev\node\xrefparser\4gl\tt\deletett.p C:\dev\node\xrefparser\4gl\tt\deletett.p 2 INCLUDE tt/ttsports.i
-C:\dev\node\xrefparser\4gl\tt\deletett.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "ttsports" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\deletett.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "name" 4 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\deletett.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "ordernum" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\deletett.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "itemnum" 7 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\deletett.p C:\dev\node\xrefparser\4gl\tt\deletett.p 4 SEARCH ttsports default TEMPTABLE WHOLE-INDEX
-C:\dev\node\xrefparser\4gl\tt\deletett.p C:\dev\node\xrefparser\4gl\tt\deletett.p 9 SEARCH ttsports default TEMPTABLE WHOLE-INDEX
-C:\dev\node\xrefparser\4gl\tt\deletett.p C:\dev\node\xrefparser\4gl\tt\deletett.p 13 SEARCH ttsports default TEMPTABLE WHOLE-INDEX
-C:\dev\node\xrefparser\4gl\tt\deletett.p C:\dev\node\xrefparser\4gl\tt\deletett.p 14 DELETE ttsports TEMPTABLE
-C:\dev\node\xrefparser\4gl\tt\deletett.p C:\dev\node\xrefparser\4gl\tt\deletett.p 16 PROCEDURE publicDelete,,
-C:\dev\node\xrefparser\4gl\tt\deletett.p C:\dev\node\xrefparser\4gl\tt\deletett.p 16 STRING "PUBLICDELETE" 12 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\deletett.p C:\dev\node\xrefparser\4gl\tt\deletett.p 16 STRING "default" 7 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\deletett.p C:\dev\go\xref\4gl\tt\deletett.p 1 COMPILE C:\dev\go\xref\4gl/tt\deletett.p
+C:\dev\go\xref\4gl\tt\deletett.p C:\dev\go\xref\4gl\tt\deletett.p 1 CPINTERNAL UTF-8
+C:\dev\go\xref\4gl\tt\deletett.p C:\dev\go\xref\4gl\tt\deletett.p 1 CPSTREAM UTF-8
+C:\dev\go\xref\4gl\tt\deletett.p C:\dev\go\xref\4gl\tt\deletett.p 2 INCLUDE tt/ttsports.i
+C:\dev\go\xref\4gl\tt\deletett.p C:\dev\go\xref\4gl\tt\ttsports.i 1 STRING "ttsports" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\deletett.p C:\dev\go\xref\4gl\tt\ttsports.i 1 STRING "name" 4 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\deletett.p C:\dev\go\xref\4gl\tt\ttsports.i 1 STRING "ordernum" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\deletett.p C:\dev\go\xref\4gl\tt\ttsports.i 1 STRING "itemnum" 7 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\deletett.p C:\dev\go\xref\4gl\tt\deletett.p 4 SEARCH ttsports default TEMPTABLE WHOLE-INDEX
+C:\dev\go\xref\4gl\tt\deletett.p C:\dev\go\xref\4gl\tt\deletett.p 9 SEARCH ttsports default TEMPTABLE WHOLE-INDEX
+C:\dev\go\xref\4gl\tt\deletett.p C:\dev\go\xref\4gl\tt\deletett.p 13 SEARCH ttsports default TEMPTABLE WHOLE-INDEX
+C:\dev\go\xref\4gl\tt\deletett.p C:\dev\go\xref\4gl\tt\deletett.p 14 DELETE ttsports TEMPTABLE
+C:\dev\go\xref\4gl\tt\deletett.p C:\dev\go\xref\4gl\tt\deletett.p 16 PROCEDURE publicDelete,,
+C:\dev\go\xref\4gl\tt\deletett.p C:\dev\go\xref\4gl\tt\deletett.p 16 STRING "PUBLICDELETE" 12 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\deletett.p C:\dev\go\xref\4gl\tt\deletett.p 16 STRING "default" 7 NONE UNTRANSLATABLE 

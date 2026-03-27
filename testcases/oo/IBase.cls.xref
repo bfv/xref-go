@@ -1,8 +1,8 @@
-C:\dev\node\xrefparser\4gl\oo\IBase.cls C:\dev\node\xrefparser\4gl\oo\IBase.cls 1 COMPILE C:\dev\node\xrefparser\4gl/oo\IBase.cls
-C:\dev\node\xrefparser\4gl\oo\IBase.cls C:\dev\node\xrefparser\4gl\oo\IBase.cls 1 CPINTERNAL UTF-8
-C:\dev\node\xrefparser\4gl\oo\IBase.cls C:\dev\node\xrefparser\4gl\oo\IBase.cls 1 CPSTREAM UTF-8
-C:\dev\node\xrefparser\4gl\oo\IBase.cls C:\dev\node\xrefparser\4gl\oo\IBase.cls 14 INTERFACE oo.IBase,,,,
-C:\dev\node\xrefparser\4gl\oo\IBase.cls C:\dev\node\xrefparser\4gl\oo\IBase.cls 14 STRING "oo.IBase" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\IBase.cls C:\dev\node\xrefparser\4gl\oo\IBase.cls 16 STRING "name" 4 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\IBase.cls C:\dev\node\xrefparser\4gl\oo\IBase.cls 16 METHOD PUBLIC,,,,,Identify,character,INPUT name CHARACTER
-C:\dev\node\xrefparser\4gl\oo\IBase.cls C:\dev\node\xrefparser\4gl\oo\IBase.cls 16 STRING "IDENTIFY" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\IBase.cls C:\dev\go\xref\4gl\oo\IBase.cls 1 COMPILE C:\dev\go\xref\4gl/oo\IBase.cls
+C:\dev\go\xref\4gl\oo\IBase.cls C:\dev\go\xref\4gl\oo\IBase.cls 1 CPINTERNAL UTF-8
+C:\dev\go\xref\4gl\oo\IBase.cls C:\dev\go\xref\4gl\oo\IBase.cls 1 CPSTREAM UTF-8
+C:\dev\go\xref\4gl\oo\IBase.cls C:\dev\go\xref\4gl\oo\IBase.cls 14 INTERFACE oo.IBase,,,,
+C:\dev\go\xref\4gl\oo\IBase.cls C:\dev\go\xref\4gl\oo\IBase.cls 14 STRING "oo.IBase" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\IBase.cls C:\dev\go\xref\4gl\oo\IBase.cls 16 STRING "name" 4 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\IBase.cls C:\dev\go\xref\4gl\oo\IBase.cls 16 METHOD PUBLIC,,,,,Identify,character,INPUT name CHARACTER
+C:\dev\go\xref\4gl\oo\IBase.cls C:\dev\go\xref\4gl\oo\IBase.cls 16 STRING "IDENTIFY" 8 NONE UNTRANSLATABLE 

@@ -1,9 +1,9 @@
-C:\dev\node\xrefparser\4gl\oo\Empty.cls C:\dev\node\xrefparser\4gl\oo\Empty.cls 1 COMPILE C:\dev\node\xrefparser\4gl/oo\Empty.cls
-C:\dev\node\xrefparser\4gl\oo\Empty.cls C:\dev\node\xrefparser\4gl\oo\Empty.cls 1 CPINTERNAL UTF-8
-C:\dev\node\xrefparser\4gl\oo\Empty.cls C:\dev\node\xrefparser\4gl\oo\Empty.cls 1 CPSTREAM UTF-8
-C:\dev\node\xrefparser\4gl\oo\Empty.cls C:\dev\node\xrefparser\4gl\oo\Empty.cls 14 BLOCK-LEVEL ON ERROR UNDO, THROW
-C:\dev\node\xrefparser\4gl\oo\Empty.cls C:\dev\node\xrefparser\4gl\oo\Empty.cls 16 CLASS oo.Empty,,IMPLEMENTS oo.IEmpty,,,,
-C:\dev\node\xrefparser\4gl\oo\Empty.cls C:\dev\node\xrefparser\4gl\oo\Empty.cls 16 STRING "oo.Empty" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Empty.cls C:\dev\node\xrefparser\4gl\oo\Empty.cls 16 STRING "oo.IEmpty" 9 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Empty.cls C:\dev\node\xrefparser\4gl\oo\Empty.cls 18 CONSTRUCTOR PUBLIC,,,,Empty,void,
-C:\dev\node\xrefparser\4gl\oo\Empty.cls C:\dev\node\xrefparser\4gl\oo\Empty.cls 18 STRING "EMPTY" 5 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Empty.cls C:\dev\go\xref\4gl\oo\Empty.cls 1 COMPILE C:\dev\go\xref\4gl/oo\Empty.cls
+C:\dev\go\xref\4gl\oo\Empty.cls C:\dev\go\xref\4gl\oo\Empty.cls 1 CPINTERNAL UTF-8
+C:\dev\go\xref\4gl\oo\Empty.cls C:\dev\go\xref\4gl\oo\Empty.cls 1 CPSTREAM UTF-8
+C:\dev\go\xref\4gl\oo\Empty.cls C:\dev\go\xref\4gl\oo\Empty.cls 14 BLOCK-LEVEL ON ERROR UNDO, THROW
+C:\dev\go\xref\4gl\oo\Empty.cls C:\dev\go\xref\4gl\oo\Empty.cls 16 CLASS oo.Empty,,IMPLEMENTS oo.IEmpty,,,,
+C:\dev\go\xref\4gl\oo\Empty.cls C:\dev\go\xref\4gl\oo\Empty.cls 16 STRING "oo.Empty" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Empty.cls C:\dev\go\xref\4gl\oo\Empty.cls 16 STRING "oo.IEmpty" 9 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Empty.cls C:\dev\go\xref\4gl\oo\Empty.cls 18 CONSTRUCTOR PUBLIC,,,,Empty,void,
+C:\dev\go\xref\4gl\oo\Empty.cls C:\dev\go\xref\4gl\oo\Empty.cls 18 STRING "EMPTY" 5 NONE UNTRANSLATABLE 

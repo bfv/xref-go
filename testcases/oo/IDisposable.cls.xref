@@ -1,8 +1,8 @@
-C:\dev\node\xrefparser\4gl\oo\IDisposable.cls C:\dev\node\xrefparser\4gl\oo\IDisposable.cls 1 COMPILE C:\dev\node\xrefparser\4gl/oo\IDisposable.cls
-C:\dev\node\xrefparser\4gl\oo\IDisposable.cls C:\dev\node\xrefparser\4gl\oo\IDisposable.cls 1 CPINTERNAL UTF-8
-C:\dev\node\xrefparser\4gl\oo\IDisposable.cls C:\dev\node\xrefparser\4gl\oo\IDisposable.cls 1 CPSTREAM UTF-8
-C:\dev\node\xrefparser\4gl\oo\IDisposable.cls C:\dev\node\xrefparser\4gl\oo\IDisposable.cls 15 INTERFACE oo.IDisposable,INHERITS oo.IEmpty,,,
-C:\dev\node\xrefparser\4gl\oo\IDisposable.cls C:\dev\node\xrefparser\4gl\oo\IDisposable.cls 15 STRING "oo.IDisposable" 14 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\IDisposable.cls C:\dev\node\xrefparser\4gl\oo\IDisposable.cls 15 STRING "oo.IEmpty" 9 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\IDisposable.cls C:\dev\node\xrefparser\4gl\oo\IDisposable.cls 17 METHOD PUBLIC,,,,,Dispose,void,
-C:\dev\node\xrefparser\4gl\oo\IDisposable.cls C:\dev\node\xrefparser\4gl\oo\IDisposable.cls 17 STRING "DISPOSE" 7 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\IDisposable.cls C:\dev\go\xref\4gl\oo\IDisposable.cls 1 COMPILE C:\dev\go\xref\4gl/oo\IDisposable.cls
+C:\dev\go\xref\4gl\oo\IDisposable.cls C:\dev\go\xref\4gl\oo\IDisposable.cls 1 CPINTERNAL UTF-8
+C:\dev\go\xref\4gl\oo\IDisposable.cls C:\dev\go\xref\4gl\oo\IDisposable.cls 1 CPSTREAM UTF-8
+C:\dev\go\xref\4gl\oo\IDisposable.cls C:\dev\go\xref\4gl\oo\IDisposable.cls 15 INTERFACE oo.IDisposable,INHERITS oo.IEmpty,,,
+C:\dev\go\xref\4gl\oo\IDisposable.cls C:\dev\go\xref\4gl\oo\IDisposable.cls 15 STRING "oo.IDisposable" 14 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\IDisposable.cls C:\dev\go\xref\4gl\oo\IDisposable.cls 15 STRING "oo.IEmpty" 9 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\IDisposable.cls C:\dev\go\xref\4gl\oo\IDisposable.cls 17 METHOD PUBLIC,,,,,Dispose,void,
+C:\dev\go\xref\4gl\oo\IDisposable.cls C:\dev\go\xref\4gl\oo\IDisposable.cls 17 STRING "DISPOSE" 7 NONE UNTRANSLATABLE 

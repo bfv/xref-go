@@ -1,14 +1,14 @@
-C:\dev\node\xrefparser\4gl\tt\creatett.p C:\dev\node\xrefparser\4gl\tt\creatett.p 1 COMPILE C:\dev\node\xrefparser\4gl/tt\creatett.p
-C:\dev\node\xrefparser\4gl\tt\creatett.p C:\dev\node\xrefparser\4gl\tt\creatett.p 1 CPINTERNAL UTF-8
-C:\dev\node\xrefparser\4gl\tt\creatett.p C:\dev\node\xrefparser\4gl\tt\creatett.p 1 CPSTREAM UTF-8
-C:\dev\node\xrefparser\4gl\tt\creatett.p C:\dev\node\xrefparser\4gl\tt\creatett.p 2 INCLUDE tt/ttsports.i
-C:\dev\node\xrefparser\4gl\tt\creatett.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "ttsports" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\creatett.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "name" 4 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\creatett.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "ordernum" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\creatett.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "itemnum" 7 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\creatett.p C:\dev\node\xrefparser\4gl\tt\creatett.p 6 STRING "abc" 3 NONE TRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\creatett.p C:\dev\node\xrefparser\4gl\tt\creatett.p 15 CREATE ttsports TEMPTABLE
-C:\dev\node\xrefparser\4gl\tt\creatett.p C:\dev\node\xrefparser\4gl\tt\creatett.p 16 STRING "abc" 3 NONE TRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\creatett.p C:\dev\node\xrefparser\4gl\tt\creatett.p 22 PROCEDURE publicCreate,,
-C:\dev\node\xrefparser\4gl\tt\creatett.p C:\dev\node\xrefparser\4gl\tt\creatett.p 22 STRING "PUBLICCREATE" 12 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\creatett.p C:\dev\node\xrefparser\4gl\tt\creatett.p 22 STRING "default" 7 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\creatett.p C:\dev\go\xref\4gl\tt\creatett.p 1 COMPILE C:\dev\go\xref\4gl/tt\creatett.p
+C:\dev\go\xref\4gl\tt\creatett.p C:\dev\go\xref\4gl\tt\creatett.p 1 CPINTERNAL UTF-8
+C:\dev\go\xref\4gl\tt\creatett.p C:\dev\go\xref\4gl\tt\creatett.p 1 CPSTREAM UTF-8
+C:\dev\go\xref\4gl\tt\creatett.p C:\dev\go\xref\4gl\tt\creatett.p 2 INCLUDE tt/ttsports.i
+C:\dev\go\xref\4gl\tt\creatett.p C:\dev\go\xref\4gl\tt\ttsports.i 1 STRING "ttsports" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\creatett.p C:\dev\go\xref\4gl\tt\ttsports.i 1 STRING "name" 4 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\creatett.p C:\dev\go\xref\4gl\tt\ttsports.i 1 STRING "ordernum" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\creatett.p C:\dev\go\xref\4gl\tt\ttsports.i 1 STRING "itemnum" 7 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\creatett.p C:\dev\go\xref\4gl\tt\creatett.p 6 STRING "abc" 3 NONE TRANSLATABLE 
+C:\dev\go\xref\4gl\tt\creatett.p C:\dev\go\xref\4gl\tt\creatett.p 15 CREATE ttsports TEMPTABLE
+C:\dev\go\xref\4gl\tt\creatett.p C:\dev\go\xref\4gl\tt\creatett.p 16 STRING "abc" 3 NONE TRANSLATABLE 
+C:\dev\go\xref\4gl\tt\creatett.p C:\dev\go\xref\4gl\tt\creatett.p 22 PROCEDURE publicCreate,,
+C:\dev\go\xref\4gl\tt\creatett.p C:\dev\go\xref\4gl\tt\creatett.p 22 STRING "PUBLICCREATE" 12 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\creatett.p C:\dev\go\xref\4gl\tt\creatett.p 22 STRING "default" 7 NONE UNTRANSLATABLE 

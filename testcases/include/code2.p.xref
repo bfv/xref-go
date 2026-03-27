@@ -1,13 +1,13 @@
-C:\dev\node\xrefparser\4gl\include\code2.p C:\dev\node\xrefparser\4gl\include\code2.p 1 COMPILE C:\dev\node\xrefparser\4gl/include\code2.p
-C:\dev\node\xrefparser\4gl\include\code2.p C:\dev\node\xrefparser\4gl\include\code2.p 1 CPINTERNAL UTF-8
-C:\dev\node\xrefparser\4gl\include\code2.p C:\dev\node\xrefparser\4gl\include\code2.p 1 CPSTREAM UTF-8
-C:\dev\node\xrefparser\4gl\include\code2.p C:\dev\node\xrefparser\4gl\include\code2.p 2 INCLUDE include/code2.i
-C:\dev\node\xrefparser\4gl\include\code2.p C:\dev\node\xrefparser\4gl\include\code2.i 2 STRING "Order" 5 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\include\code2.p C:\dev\node\xrefparser\4gl\include\code2.i 2 ACCESS sports2000.Order Ordernum 
-C:\dev\node\xrefparser\4gl\include\code2.p C:\dev\node\xrefparser\4gl\include\code2.i 2 SEARCH sports2000.Order OrderNum
-C:\dev\node\xrefparser\4gl\include\code2.p C:\dev\node\xrefparser\4gl\include\code2.p 6 STRING "Customer" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\include\code2.p C:\dev\node\xrefparser\4gl\include\code2.p 6 SEARCH sports2000.Customer CustNum WHOLE-INDEX
-C:\dev\node\xrefparser\4gl\include\code2.p C:\dev\node\xrefparser\4gl\include\code2.p 8 STRING "OrderLine" 9 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\include\code2.p C:\dev\node\xrefparser\4gl\include\code2.p 8 SEARCH sports2000.OrderLine orderline WHOLE-INDEX
-C:\dev\node\xrefparser\4gl\include\code2.p C:\dev\node\xrefparser\4gl\include\code2.p 12 SEARCH sports2000.OrderLine orderline TABLE-SCAN
-C:\dev\node\xrefparser\4gl\include\code2.p C:\dev\node\xrefparser\4gl\include\code2.p 4 RUN include/code1.p
+C:\dev\go\xref\4gl\include\code2.p C:\dev\go\xref\4gl\include\code2.p 1 COMPILE C:\dev\go\xref\4gl/include\code2.p
+C:\dev\go\xref\4gl\include\code2.p C:\dev\go\xref\4gl\include\code2.p 1 CPINTERNAL UTF-8
+C:\dev\go\xref\4gl\include\code2.p C:\dev\go\xref\4gl\include\code2.p 1 CPSTREAM UTF-8
+C:\dev\go\xref\4gl\include\code2.p C:\dev\go\xref\4gl\include\code2.p 2 INCLUDE include/code2.i
+C:\dev\go\xref\4gl\include\code2.p C:\dev\go\xref\4gl\include\code2.i 2 STRING "Order" 5 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\include\code2.p C:\dev\go\xref\4gl\include\code2.i 2 ACCESS sports2000.Order Ordernum 
+C:\dev\go\xref\4gl\include\code2.p C:\dev\go\xref\4gl\include\code2.i 2 SEARCH sports2000.Order OrderNum
+C:\dev\go\xref\4gl\include\code2.p C:\dev\go\xref\4gl\include\code2.p 6 STRING "Customer" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\include\code2.p C:\dev\go\xref\4gl\include\code2.p 6 SEARCH sports2000.Customer CustNum WHOLE-INDEX
+C:\dev\go\xref\4gl\include\code2.p C:\dev\go\xref\4gl\include\code2.p 8 STRING "OrderLine" 9 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\include\code2.p C:\dev\go\xref\4gl\include\code2.p 8 SEARCH sports2000.OrderLine orderline WHOLE-INDEX
+C:\dev\go\xref\4gl\include\code2.p C:\dev\go\xref\4gl\include\code2.p 12 SEARCH sports2000.OrderLine orderline TABLE-SCAN
+C:\dev\go\xref\4gl\include\code2.p C:\dev\go\xref\4gl\include\code2.p 4 RUN include/code1.p

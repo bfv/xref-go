@@ -1,22 +1,22 @@
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 1 COMPILE C:\dev\node\xrefparser\4gl/db\tables_tt.p
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 1 CPINTERNAL UTF-8
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 1 CPSTREAM UTF-8
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 2 INCLUDE tt/ttsports.i
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "ttsports" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "name" 4 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "ordernum" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "itemnum" 7 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 4 STRING "Customer" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 4 SEARCH sports2000.Customer CustNum WHOLE-INDEX
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 4 STRING "Order" 5 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 4 ACCESS sports2000.Order CustNum 
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 4 ACCESS sports2000.Customer CustNum 
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 4 SEARCH sports2000.Order CustOrder
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 4 STRING "OrderLine" 9 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 4 ACCESS sports2000.OrderLine Ordernum 
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 4 ACCESS sports2000.Order Ordernum 
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 4 SEARCH sports2000.OrderLine orderline
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 9 ACCESS sports2000.Customer Name 
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 9 ACCESS sports2000.Order Ordernum 
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 9 ACCESS sports2000.OrderLine Itemnum 
-C:\dev\node\xrefparser\4gl\db\tables_tt.p C:\dev\node\xrefparser\4gl\db\tables_tt.p 15 STRING "default" 7 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 1 COMPILE C:\dev\go\xref\4gl/db\tables_tt.p
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 1 CPINTERNAL UTF-8
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 1 CPSTREAM UTF-8
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 2 INCLUDE tt/ttsports.i
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\tt\ttsports.i 1 STRING "ttsports" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\tt\ttsports.i 1 STRING "name" 4 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\tt\ttsports.i 1 STRING "ordernum" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\tt\ttsports.i 1 STRING "itemnum" 7 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 4 STRING "Customer" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 4 SEARCH sports2000.Customer CustNum WHOLE-INDEX
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 4 STRING "Order" 5 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 4 ACCESS sports2000.Order CustNum 
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 4 ACCESS sports2000.Customer CustNum 
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 4 SEARCH sports2000.Order CustOrder
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 4 STRING "OrderLine" 9 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 4 ACCESS sports2000.OrderLine Ordernum 
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 4 ACCESS sports2000.Order Ordernum 
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 4 SEARCH sports2000.OrderLine orderline
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 9 ACCESS sports2000.Customer Name 
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 9 ACCESS sports2000.Order Ordernum 
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 9 ACCESS sports2000.OrderLine Itemnum 
+C:\dev\go\xref\4gl\db\tables_tt.p C:\dev\go\xref\4gl\db\tables_tt.p 15 STRING "default" 7 NONE UNTRANSLATABLE 

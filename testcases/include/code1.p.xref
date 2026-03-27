@@ -1,11 +1,11 @@
-C:\dev\node\xrefparser\4gl\include\code1.p C:\dev\node\xrefparser\4gl\include\code1.p 1 COMPILE C:\dev\node\xrefparser\4gl/include\code1.p
-C:\dev\node\xrefparser\4gl\include\code1.p C:\dev\node\xrefparser\4gl\include\code1.p 1 CPINTERNAL UTF-8
-C:\dev\node\xrefparser\4gl\include\code1.p C:\dev\node\xrefparser\4gl\include\code1.p 1 CPSTREAM UTF-8
-C:\dev\node\xrefparser\4gl\include\code1.p C:\dev\node\xrefparser\4gl\include\code1.p 2 INCLUDE include/code1.i
-C:\dev\node\xrefparser\4gl\include\code1.p C:\dev\node\xrefparser\4gl\include\code1.i 2 INCLUDE include/code2.i
-C:\dev\node\xrefparser\4gl\include\code1.i C:\dev\node\xrefparser\4gl\include\code2.i 2 STRING "Order" 5 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\include\code1.i C:\dev\node\xrefparser\4gl\include\code2.i 2 ACCESS sports2000.Order Ordernum 
-C:\dev\node\xrefparser\4gl\include\code1.i C:\dev\node\xrefparser\4gl\include\code2.i 2 SEARCH sports2000.Order OrderNum
-C:\dev\node\xrefparser\4gl\include\code1.p C:\dev\node\xrefparser\4gl\include\code1.i 4 STRING "Customer" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\include\code1.p C:\dev\node\xrefparser\4gl\include\code1.i 4 ACCESS sports2000.Customer CustNum 
-C:\dev\node\xrefparser\4gl\include\code1.p C:\dev\node\xrefparser\4gl\include\code1.i 4 SEARCH sports2000.Customer CustNum
+C:\dev\go\xref\4gl\include\code1.p C:\dev\go\xref\4gl\include\code1.p 1 COMPILE C:\dev\go\xref\4gl/include\code1.p
+C:\dev\go\xref\4gl\include\code1.p C:\dev\go\xref\4gl\include\code1.p 1 CPINTERNAL UTF-8
+C:\dev\go\xref\4gl\include\code1.p C:\dev\go\xref\4gl\include\code1.p 1 CPSTREAM UTF-8
+C:\dev\go\xref\4gl\include\code1.p C:\dev\go\xref\4gl\include\code1.p 2 INCLUDE include/code1.i
+C:\dev\go\xref\4gl\include\code1.p C:\dev\go\xref\4gl\include\code1.i 2 INCLUDE include/code2.i
+C:\dev\go\xref\4gl\include\code1.i C:\dev\go\xref\4gl\include\code2.i 2 STRING "Order" 5 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\include\code1.i C:\dev\go\xref\4gl\include\code2.i 2 ACCESS sports2000.Order Ordernum 
+C:\dev\go\xref\4gl\include\code1.i C:\dev\go\xref\4gl\include\code2.i 2 SEARCH sports2000.Order OrderNum
+C:\dev\go\xref\4gl\include\code1.p C:\dev\go\xref\4gl\include\code1.i 4 STRING "Customer" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\include\code1.p C:\dev\go\xref\4gl\include\code1.i 4 ACCESS sports2000.Customer CustNum 
+C:\dev\go\xref\4gl\include\code1.p C:\dev\go\xref\4gl\include\code1.i 4 SEARCH sports2000.Customer CustNum

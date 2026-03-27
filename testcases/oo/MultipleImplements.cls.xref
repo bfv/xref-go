@@ -1,12 +1,12 @@
-C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls 1 COMPILE C:\dev\node\xrefparser\4gl/oo\MultipleImplements.cls
-C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls 1 CPINTERNAL UTF-8
-C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls 1 CPSTREAM UTF-8
-C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls 16 BLOCK-LEVEL ON ERROR UNDO, THROW
-C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls 18 CLASS oo.MultipleImplements,,IMPLEMENTS oo.IEmpty oo.IDisposable,,,,
-C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls 18 STRING "oo.MultipleImplements" 21 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls 18 STRING "oo.IEmpty" 9 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls 18 STRING "oo.IDisposable" 14 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls 22 METHOD PUBLIC,,,,,Dispose,void,
-C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls 22 STRING "DISPOSE" 7 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls 24 CONSTRUCTOR PUBLIC,,,,MultipleImplements,void,
-C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls C:\dev\node\xrefparser\4gl\oo\MultipleImplements.cls 24 STRING "MULTIPLEIMPLEMENTS" 18 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\MultipleImplements.cls C:\dev\go\xref\4gl\oo\MultipleImplements.cls 1 COMPILE C:\dev\go\xref\4gl/oo\MultipleImplements.cls
+C:\dev\go\xref\4gl\oo\MultipleImplements.cls C:\dev\go\xref\4gl\oo\MultipleImplements.cls 1 CPINTERNAL UTF-8
+C:\dev\go\xref\4gl\oo\MultipleImplements.cls C:\dev\go\xref\4gl\oo\MultipleImplements.cls 1 CPSTREAM UTF-8
+C:\dev\go\xref\4gl\oo\MultipleImplements.cls C:\dev\go\xref\4gl\oo\MultipleImplements.cls 16 BLOCK-LEVEL ON ERROR UNDO, THROW
+C:\dev\go\xref\4gl\oo\MultipleImplements.cls C:\dev\go\xref\4gl\oo\MultipleImplements.cls 18 CLASS oo.MultipleImplements,,IMPLEMENTS oo.IEmpty oo.IDisposable,,,,
+C:\dev\go\xref\4gl\oo\MultipleImplements.cls C:\dev\go\xref\4gl\oo\MultipleImplements.cls 18 STRING "oo.MultipleImplements" 21 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\MultipleImplements.cls C:\dev\go\xref\4gl\oo\MultipleImplements.cls 18 STRING "oo.IEmpty" 9 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\MultipleImplements.cls C:\dev\go\xref\4gl\oo\MultipleImplements.cls 18 STRING "oo.IDisposable" 14 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\MultipleImplements.cls C:\dev\go\xref\4gl\oo\MultipleImplements.cls 22 METHOD PUBLIC,,,,,Dispose,void,
+C:\dev\go\xref\4gl\oo\MultipleImplements.cls C:\dev\go\xref\4gl\oo\MultipleImplements.cls 22 STRING "DISPOSE" 7 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\MultipleImplements.cls C:\dev\go\xref\4gl\oo\MultipleImplements.cls 24 CONSTRUCTOR PUBLIC,,,,MultipleImplements,void,
+C:\dev\go\xref\4gl\oo\MultipleImplements.cls C:\dev\go\xref\4gl\oo\MultipleImplements.cls 24 STRING "MULTIPLEIMPLEMENTS" 18 NONE UNTRANSLATABLE 

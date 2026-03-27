@@ -1,25 +1,25 @@
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 1 COMPILE C:\dev\node\xrefparser\4gl/oo\Address.cls
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 1 CPINTERNAL UTF-8
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 1 CPSTREAM UTF-8
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 16 BLOCK-LEVEL ON ERROR UNDO, THROW
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 18 CLASS oo.Address,INHERITS oo.AddressBase,,,,,
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 18 STRING "oo.Address" 10 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 18 STRING "oo.AddressBase" 14 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 20 STRING "Street" 6 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 20 PROPERTY PUBLIC,,,,,Street
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 21 STRING "City" 4 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 21 PROPERTY PUBLIC,,,,,City
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 24 ACCESS INHERITED-PROPERTY oo.Address:Street
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 24 ACCESS INHERITED-PROPERTY oo.Address:City
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 24 STRING " " 1 NONE TRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 25 METHOD PUBLIC,,,,,GetAdress,character,
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 25 STRING "GETADRESS" 9 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 29 METHOD PUBLIC,,OVERRIDE,,,ToString,character,
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 29 STRING "TOSTRING" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 31 STRING "address" 7 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 33 METHOD PUBLIC,,OVERRIDE,,,MoveTo,void,INPUT address OO.ADDRESS
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 33 STRING "MOVETO" 6 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 35 CONSTRUCTOR PUBLIC,,,,Address,void,
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 35 STRING "ADDRESS" 7 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls 28 INVOKE Progress.Lang.Object:ToString
-C:\dev\node\xrefparser\4gl\oo\Address.cls C:\dev\node\xrefparser\4gl\oo\Address.cls IMPLICIT INVOKE oo.AddressBase:AddressBase
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 1 COMPILE C:\dev\go\xref\4gl/oo\Address.cls
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 1 CPINTERNAL UTF-8
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 1 CPSTREAM UTF-8
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 16 BLOCK-LEVEL ON ERROR UNDO, THROW
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 18 CLASS oo.Address,INHERITS oo.AddressBase,,,,,
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 18 STRING "oo.Address" 10 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 18 STRING "oo.AddressBase" 14 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 20 STRING "Street" 6 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 20 PROPERTY PUBLIC,,,,,Street
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 21 STRING "City" 4 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 21 PROPERTY PUBLIC,,,,,City
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 24 ACCESS INHERITED-PROPERTY oo.Address:Street
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 24 ACCESS INHERITED-PROPERTY oo.Address:City
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 24 STRING " " 1 NONE TRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 25 METHOD PUBLIC,,,,,GetAdress,character,
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 25 STRING "GETADRESS" 9 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 29 METHOD PUBLIC,,OVERRIDE,,,ToString,character,
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 29 STRING "TOSTRING" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 31 STRING "address" 7 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 33 METHOD PUBLIC,,OVERRIDE,,,MoveTo,void,INPUT address OO.ADDRESS
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 33 STRING "MOVETO" 6 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 35 CONSTRUCTOR PUBLIC,,,,Address,void,
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 35 STRING "ADDRESS" 7 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls 28 INVOKE Progress.Lang.Object:ToString
+C:\dev\go\xref\4gl\oo\Address.cls C:\dev\go\xref\4gl\oo\Address.cls IMPLICIT INVOKE oo.AddressBase:AddressBase

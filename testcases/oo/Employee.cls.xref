@@ -1,12 +1,12 @@
-C:\dev\node\xrefparser\4gl\oo\Employee.cls C:\dev\node\xrefparser\4gl\oo\Employee.cls 1 COMPILE C:\dev\node\xrefparser\4gl/oo\Employee.cls
-C:\dev\node\xrefparser\4gl\oo\Employee.cls C:\dev\node\xrefparser\4gl\oo\Employee.cls 1 CPINTERNAL UTF-8
-C:\dev\node\xrefparser\4gl\oo\Employee.cls C:\dev\node\xrefparser\4gl\oo\Employee.cls 1 CPSTREAM UTF-8
-C:\dev\node\xrefparser\4gl\oo\Employee.cls C:\dev\node\xrefparser\4gl\oo\Employee.cls 14 BLOCK-LEVEL ON ERROR UNDO, THROW
-C:\dev\node\xrefparser\4gl\oo\Employee.cls C:\dev\node\xrefparser\4gl\oo\Employee.cls 16 CLASS oo.Employee,INHERITS oo.Person,,,,,
-C:\dev\node\xrefparser\4gl\oo\Employee.cls C:\dev\node\xrefparser\4gl\oo\Employee.cls 16 STRING "oo.Employee" 11 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Employee.cls C:\dev\node\xrefparser\4gl\oo\Employee.cls 16 STRING "oo.Person" 9 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Employee.cls C:\dev\node\xrefparser\4gl\oo\Employee.cls 18 STRING "EmployeeNumber" 14 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Employee.cls C:\dev\node\xrefparser\4gl\oo\Employee.cls 18 PROPERTY PUBLIC,,,,,EmployeeNumber
-C:\dev\node\xrefparser\4gl\oo\Employee.cls C:\dev\node\xrefparser\4gl\oo\Employee.cls 20 CONSTRUCTOR PUBLIC,,,,Employee,void,
-C:\dev\node\xrefparser\4gl\oo\Employee.cls C:\dev\node\xrefparser\4gl\oo\Employee.cls 20 STRING "EMPLOYEE" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\oo\Employee.cls C:\dev\node\xrefparser\4gl\oo\Employee.cls IMPLICIT INVOKE oo.Person:Person
+C:\dev\go\xref\4gl\oo\Employee.cls C:\dev\go\xref\4gl\oo\Employee.cls 1 COMPILE C:\dev\go\xref\4gl/oo\Employee.cls
+C:\dev\go\xref\4gl\oo\Employee.cls C:\dev\go\xref\4gl\oo\Employee.cls 1 CPINTERNAL UTF-8
+C:\dev\go\xref\4gl\oo\Employee.cls C:\dev\go\xref\4gl\oo\Employee.cls 1 CPSTREAM UTF-8
+C:\dev\go\xref\4gl\oo\Employee.cls C:\dev\go\xref\4gl\oo\Employee.cls 14 BLOCK-LEVEL ON ERROR UNDO, THROW
+C:\dev\go\xref\4gl\oo\Employee.cls C:\dev\go\xref\4gl\oo\Employee.cls 16 CLASS oo.Employee,INHERITS oo.Person,,,,,
+C:\dev\go\xref\4gl\oo\Employee.cls C:\dev\go\xref\4gl\oo\Employee.cls 16 STRING "oo.Employee" 11 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Employee.cls C:\dev\go\xref\4gl\oo\Employee.cls 16 STRING "oo.Person" 9 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Employee.cls C:\dev\go\xref\4gl\oo\Employee.cls 18 STRING "EmployeeNumber" 14 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Employee.cls C:\dev\go\xref\4gl\oo\Employee.cls 18 PROPERTY PUBLIC,,,,,EmployeeNumber
+C:\dev\go\xref\4gl\oo\Employee.cls C:\dev\go\xref\4gl\oo\Employee.cls 20 CONSTRUCTOR PUBLIC,,,,Employee,void,
+C:\dev\go\xref\4gl\oo\Employee.cls C:\dev\go\xref\4gl\oo\Employee.cls 20 STRING "EMPLOYEE" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\oo\Employee.cls C:\dev\go\xref\4gl\oo\Employee.cls IMPLICIT INVOKE oo.Person:Person

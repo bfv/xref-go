@@ -1,10 +1,10 @@
-C:\dev\node\xrefparser\4gl\tt\temptable.p C:\dev\node\xrefparser\4gl\tt\temptable.p 1 COMPILE C:\dev\node\xrefparser\4gl/tt\temptable.p
-C:\dev\node\xrefparser\4gl\tt\temptable.p C:\dev\node\xrefparser\4gl\tt\temptable.p 1 CPINTERNAL UTF-8
-C:\dev\node\xrefparser\4gl\tt\temptable.p C:\dev\node\xrefparser\4gl\tt\temptable.p 1 CPSTREAM UTF-8
-C:\dev\node\xrefparser\4gl\tt\temptable.p C:\dev\node\xrefparser\4gl\tt\temptable.p 2 INCLUDE tt/ttsports.i
-C:\dev\node\xrefparser\4gl\tt\temptable.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "ttsports" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\temptable.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "name" 4 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\temptable.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "ordernum" 8 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\temptable.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "itemnum" 7 NONE UNTRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\temptable.p C:\dev\node\xrefparser\4gl\tt\temptable.p 5 STRING "abc" 3 NONE TRANSLATABLE 
-C:\dev\node\xrefparser\4gl\tt\temptable.p C:\dev\node\xrefparser\4gl\tt\temptable.p 5 STRING "default" 7 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\temptable.p C:\dev\go\xref\4gl\tt\temptable.p 1 COMPILE C:\dev\go\xref\4gl/tt\temptable.p
+C:\dev\go\xref\4gl\tt\temptable.p C:\dev\go\xref\4gl\tt\temptable.p 1 CPINTERNAL UTF-8
+C:\dev\go\xref\4gl\tt\temptable.p C:\dev\go\xref\4gl\tt\temptable.p 1 CPSTREAM UTF-8
+C:\dev\go\xref\4gl\tt\temptable.p C:\dev\go\xref\4gl\tt\temptable.p 2 INCLUDE tt/ttsports.i
+C:\dev\go\xref\4gl\tt\temptable.p C:\dev\go\xref\4gl\tt\ttsports.i 1 STRING "ttsports" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\temptable.p C:\dev\go\xref\4gl\tt\ttsports.i 1 STRING "name" 4 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\temptable.p C:\dev\go\xref\4gl\tt\ttsports.i 1 STRING "ordernum" 8 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\temptable.p C:\dev\go\xref\4gl\tt\ttsports.i 1 STRING "itemnum" 7 NONE UNTRANSLATABLE 
+C:\dev\go\xref\4gl\tt\temptable.p C:\dev\go\xref\4gl\tt\temptable.p 5 STRING "abc" 3 NONE TRANSLATABLE 
+C:\dev\go\xref\4gl\tt\temptable.p C:\dev\go\xref\4gl\tt\temptable.p 5 STRING "default" 7 NONE UNTRANSLATABLE 
