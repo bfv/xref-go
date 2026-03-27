@@ -19,14 +19,6 @@ jobs:
         with:
           fetch-depth: 0  # goreleaser needs the full history to determine the version
 
-      - name: Wait for CI to complete
-        uses: lewagon/wait-on-check-action@74049309dfeff245fe8009a0137eacf28136cb3c  # v1.5.0
-        with:
-          ref: ${{ github.sha }}
-          check-name: 'build'
-          repo-token: ${{ secrets.GITHUB_TOKEN }}
-          wait-interval: 10
-
       - name: Set up Go
         uses: actions/setup-go@7a3fe6cf4cb3a834922a1244abfce67bcef6a0c5  # v6.2.0
         with:
