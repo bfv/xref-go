@@ -4,7 +4,7 @@ GOBUILD=$(GOCMD) build
 GOCLEAN=$(GOCMD) clean
 GOTEST=$(GOCMD) test
 GOGET=$(GOCMD) get
-BINARY_NAME=<<project_name>>
+BINARY_NAME=xref
 BINARY_WINDOWS=$(BINARY_NAME).exe
 BINARY_LINUX=$(BINARY_NAME)
 BUILDDIR=build
@@ -18,10 +18,10 @@ all: build
 build: build-windows build-linux
 
 build-windows:
-	env GOOS=windows GOARCH=amd64 go build -o $(BUILDDIR)/$(BINARY_WINDOWS) -ldflags "-X main.version=$(VERSION) -w -s" ./cmd/<<project_name>>
+	env GOOS=windows GOARCH=amd64 go build -o $(BUILDDIR)/$(BINARY_WINDOWS) -ldflags "-X main.version=$(VERSION) -w -s" ./cmd/xref
 
 build-linux:
-	env CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o $(BUILDDIR)/$(BINARY_LINUX) -ldflags "-X main.version=$(VERSION) -w -s" ./cmd/<<project_name>>
+	env CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o $(BUILDDIR)/$(BINARY_LINUX) -ldflags "-X main.version=$(VERSION) -w -s" ./cmd/xref
 
 # Test targets
 test:
@@ -42,20 +42,20 @@ check:
 # Complete pre-commit check (Windows-compatible - no race detection)
 pre-commit:
 	$(GOCMD) mod verify
-	$(GOBUILD) -v ./cmd/<<project_name>>
+	$(GOBUILD) -v ./cmd/xref
 	$(GOCMD) vet ./...
 	$(GOTEST) -v -coverprofile=coverage.txt -covermode=atomic ./...
 
 # CI check (Linux - with race detection)
 ci:
 	$(GOCMD) mod verify
-	$(GOBUILD) -v ./cmd/<<project_name>>
+	$(GOBUILD) -v ./cmd/xref
 	$(GOCMD) vet ./...
 	$(GOTEST) -v -race -coverprofile=coverage.txt -covermode=atomic ./...
 
 clean:
-	if exist <<project_name>>.exe del <<project_name>>.exe
-	if exist <<project_name>> del <<project_name>>
+	if exist xref.exe del xref.exe
+	if exist xref del xref
 	if exist annotations.json del annotations.json
 	if exist annotations.log del annotations.log
 	if exist coverage.txt del coverage.txt

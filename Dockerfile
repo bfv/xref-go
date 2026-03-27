@@ -3,8 +3,8 @@ FROM alpine:latest AS builder
 RUN mkdir -p /app/bin
 RUN mkdir /src
 
-COPY <<project_name>> /app/bin/
-RUN chmod +x /app/bin/<<project_name>>
+COPY xref /app/bin/
+RUN chmod +x /app/bin/xref
 
 FROM scratch
 
@@ -13,4 +13,4 @@ COPY --from=builder /src /src
 
 WORKDIR /src
 
-ENTRYPOINT ["/app/bin/<<project_name>>"]
+ENTRYPOINT ["/app/bin/xref"]

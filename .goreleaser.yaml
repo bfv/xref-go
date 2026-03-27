@@ -1,9 +1,9 @@
 version: 2
 
 builds:
-  - id: <<project_name>>
-    main: ./cmd/<<project_name>>
-    binary: <<project_name>>
+  - id: xref
+    main: ./cmd/xref
+    binary: xref
     ldflags:
       - -X main.version={{.Version}} -w -s
     env:
@@ -15,7 +15,7 @@ builds:
       - amd64
 
 archives:
-  - id: <<project_name>>
+  - id: xref
     formats:
       - tar.gz
     format_overrides:
@@ -37,13 +37,13 @@ release:
 
 dockers:
   - image_templates:
-      - "devbfvio/<<project_name>>:{{ .Version }}"
-      - "devbfvio/<<project_name>>:latest"
+      - "devbfvio/xref:{{ .Version }}"
+      - "devbfvio/xref:latest"
     dockerfile: Dockerfile
     build_flag_templates:
       - "--label=org.opencontainers.image.version={{ .Version }}"
       - "--label=org.opencontainers.image.created={{ .Date }}"
-      - "--label=org.opencontainers.image.source=https://github.com/bfv/<<project_name>>"
+      - "--label=org.opencontainers.image.source=https://github.com/bfv/xref"
     extra_files:
       - README.md
       - LICENSE

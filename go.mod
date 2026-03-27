@@ -1,4 +1,4 @@
-module github.com/bfv/<<project_name>>
+module github.com/bfv/xref
 
 go 1.26
 
