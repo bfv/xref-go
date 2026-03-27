@@ -42,15 +42,15 @@ type Table struct {
 
 // Class represents an OpenEdge class definition.
 type Class struct {
-	Name           string        `json:"name"`
-	Inherits       []string      `json:"inherits"`
-	Implements     []string      `json:"implements"`
-	UseWidgetPool  bool          `json:"useWidgetPool"`
-	Final          bool          `json:"final"`
-	Abstract       bool          `json:"abstract"`
-	Serializable   bool          `json:"serializable"`
-	Constructors   []Constructor `json:"constructors"`
-	Methods        []Method      `json:"methods"`
+	Name          string        `json:"name"`
+	Inherits      []string      `json:"inherits"`
+	Implements    []string      `json:"implements"`
+	UseWidgetPool bool          `json:"useWidgetPool"`
+	Final         bool          `json:"final"`
+	Abstract      bool          `json:"abstract"`
+	Serializable  bool          `json:"serializable"`
+	Constructors  []Constructor `json:"constructors"`
+	Methods       []Method      `json:"methods"`
 }
 
 // Interface represents an OpenEdge interface definition.
@@ -243,6 +243,11 @@ func NormalizePath(file, dir string) string {
 	file = strings.ReplaceAll(file, "//", "/")
 	dir = strings.ReplaceAll(dir, "\\", "/")
 	dir = strings.ReplaceAll(dir, "//", "/")
-	file = strings.Replace(file, dir, "", 1)
-	return file
+	if dir != "" && dir != "." {
+		if !strings.HasSuffix(dir, "/") {
+			dir += "/"
+		}
+		file = strings.TrimPrefix(file, dir)
+	}
+	return strings.TrimPrefix(file, "/")
 }
