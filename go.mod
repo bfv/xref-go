@@ -3,7 +3,7 @@ module github.com/bfv/xref
 go 1.26
 
 require (
-	github.com/rs/zerolog v1.33.0
+	github.com/rs/zerolog v1.34.0
 	github.com/spf13/cobra v1.10.2
 )
 
