@@ -30,7 +30,6 @@ func main() {
 	rootCmd.AddCommand(commands.NewSearchCmd())
 	rootCmd.AddCommand(commands.NewListCmd())
 	rootCmd.AddCommand(commands.NewShowCmd())
-	rootCmd.AddCommand(commands.NewExportCmd())
 	rootCmd.AddCommand(commands.NewMatrixCmd())
 
 	if err := rootCmd.Execute(); err != nil {

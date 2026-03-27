@@ -28,6 +28,7 @@ xref list --tables
 xref list --databases
 xref show
 xref show --source src/Customer.cls
+xref matrix
 ```
 
 ## Commands
@@ -92,19 +93,6 @@ xref show [flags]
 |------|-------|---------|-------------|
 | `--input` | `-i` | `xref.json` | Input JSON data file |
 | `--source` | `-s` | | Source file to show details for (lists all sources if omitted) |
-
-### export
-
-Export parsed data to a JSON file or stdout.
-
-```
-xref export [flags]
-```
-
-| Flag | Short | Default | Description |
-|------|-------|---------|-------------|
-| `--input` | `-i` | `xref.json` | Input JSON data file |
-| `--output` | `-o` | | Output file path (prints to stdout if omitted) |
 
 ### matrix
 
