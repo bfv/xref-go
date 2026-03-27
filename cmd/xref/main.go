@@ -26,17 +26,12 @@ func main() {
 
 	rootCmd.AddCommand(commands.NewVersionCmd(version))
 	rootCmd.AddCommand(commands.NewAboutCmd(version))
-	rootCmd.AddCommand(commands.NewInitCmd())
 	rootCmd.AddCommand(commands.NewParseCmd())
 	rootCmd.AddCommand(commands.NewSearchCmd())
 	rootCmd.AddCommand(commands.NewListCmd())
 	rootCmd.AddCommand(commands.NewShowCmd())
 	rootCmd.AddCommand(commands.NewExportCmd())
 	rootCmd.AddCommand(commands.NewMatrixCmd())
-	rootCmd.AddCommand(commands.NewReposCmd())
-	rootCmd.AddCommand(commands.NewSwitchCmd())
-	rootCmd.AddCommand(commands.NewRemoveCmd())
-	rootCmd.AddCommand(commands.NewValidateCmd())
 
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Fprintln(os.Stderr, err)

@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/bfv/xref/internal/config"
+	"github.com/bfv/xref/internal/datafile"
 	"github.com/bfv/xref/internal/models"
 	"github.com/spf13/cobra"
 )
@@ -15,22 +15,10 @@ func NewMatrixCmd() *cobra.Command {
 		Use:   "matrix",
 		Short: "Show a source/table matrix",
 		RunE: func(cmd *cobra.Command, args []string) error {
-			repoName, _ := cmd.Flags().GetString("name")
+			input, _ := cmd.Flags().GetString("input")
 			dbFilter, _ := cmd.Flags().GetString("database")
 
-			cfg, err := config.NewConfig()
-			if err != nil {
-				return err
-			}
-
-			if repoName == "" {
-				repoName = cfg.Data.Current
-			}
-			if repoName == "" {
-				return fmt.Errorf("no repo specified and no current repo set")
-			}
-
-			xrefdata, err := cfg.ReadRepoData(repoName)
+			xrefdata, err := datafile.Load(input)
 			if err != nil {
 				return err
 			}
@@ -75,7 +63,7 @@ func NewMatrixCmd() *cobra.Command {
 		},
 	}
 
-	cmd.Flags().StringP("name", "n", "", "Repository name (defaults to current)")
+	cmd.Flags().StringP("input", "i", datafile.DefaultDataFile, "Input JSON data file")
 	cmd.Flags().StringP("database", "d", "", "Filter by database name")
 
 	return cmd
