@@ -14,8 +14,8 @@ func NewAboutCmd(version string) *cobra.Command {
 		Run: func(cmd *cobra.Command, args []string) {
 			fmt.Println("xref - OpenEdge XREF CLI tool")
 			fmt.Println("Version:", version)
-			fmt.Println("Author:  bfv <dev@bfv.io>")
-			fmt.Println("License: ISC")
+			fmt.Println("Author:  Bronco Oostermeyer <dev@bfv.io>")
+			fmt.Println("License: MIT")
 			fmt.Println("Repo:    https://github.com/bfv/xref")
 		},
 	}
