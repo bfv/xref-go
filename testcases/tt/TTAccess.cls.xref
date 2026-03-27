@@ -1,0 +1,21 @@
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\TTAccess.cls 1 COMPILE C:\dev\node\xrefparser\4gl/tt\TTAccess.cls
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\TTAccess.cls 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\TTAccess.cls 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\TTAccess.cls 14 BLOCK-LEVEL ON ERROR UNDO, THROW
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\TTAccess.cls 16 CLASS tt.TTAccess,,,,,,
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\TTAccess.cls 16 STRING "tt.TTAccess" 11 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\TTAccess.cls 18 INCLUDE "tt/ttsports.i &accessor=""protected"""
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "ttsports" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "name" 4 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "ordernum" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "itemnum" 7 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 DATA-MEMBER PROTECTED,,TEMPTABLE,ttsports
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\TTAccess.cls 21 ACCESS DATA-MEMBER tt.TTAccess:ttsports ordernum TEMPTABLE
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\TTAccess.cls 21 SEARCH DATA-MEMBER tt.TTAccess:ttsports default TEMPTABLE WHOLE-INDEX
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\TTAccess.cls 22 ACCESS DATA-MEMBER tt.TTAccess:ttsports itemnum TEMPTABLE
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\TTAccess.cls 22 UPDATE DATA-MEMBER tt.TTAccess:ttsports itemnum TEMPTABLE 
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\TTAccess.cls 23 METHOD PUBLIC,,,,,updateAccess,void,
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\TTAccess.cls 23 STRING "UPDATEACCESS" 12 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\TTAccess.cls 25 CONSTRUCTOR PUBLIC,,,,TTAccess,void,
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\TTAccess.cls 25 STRING "TTACCESS" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\TTAccess.cls C:\dev\node\xrefparser\4gl\tt\TTAccess.cls 25 STRING "default" 7 NONE UNTRANSLATABLE 

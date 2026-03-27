@@ -1,0 +1,6 @@
+C:\dev\node\xrefparser\4gl\run\proc2.p C:\dev\node\xrefparser\4gl\run\proc2.p 1 COMPILE C:\dev\node\xrefparser\4gl/run\proc2.p
+C:\dev\node\xrefparser\4gl\run\proc2.p C:\dev\node\xrefparser\4gl\run\proc2.p 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\run\proc2.p C:\dev\node\xrefparser\4gl\run\proc2.p 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\run\proc2.p C:\dev\node\xrefparser\4gl\run\proc2.p 2 STRING "cIn" 3 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\run\proc2.p C:\dev\node\xrefparser\4gl\run\proc2.p 3 STRING "iIn" 3 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\run\proc2.p C:\dev\node\xrefparser\4gl\run\proc2.p 5 RUN xref/oo/proc3.p

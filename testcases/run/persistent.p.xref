@@ -1,0 +1,10 @@
+C:\dev\node\xrefparser\4gl\run\persistent.p C:\dev\node\xrefparser\4gl\run\persistent.p 1 COMPILE C:\dev\node\xrefparser\4gl/run\persistent.p
+C:\dev\node\xrefparser\4gl\run\persistent.p C:\dev\node\xrefparser\4gl\run\persistent.p 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\run\persistent.p C:\dev\node\xrefparser\4gl\run\persistent.p 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\run\persistent.p C:\dev\node\xrefparser\4gl\run\persistent.p 2 STRING "before" 6 NONE TRANSLATABLE 
+C:\dev\node\xrefparser\4gl\run\persistent.p C:\dev\node\xrefparser\4gl\run\persistent.p 5 STRING "cIn" 3 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\run\persistent.p C:\dev\node\xrefparser\4gl\run\persistent.p 6 PROCEDURE test1,,INPUT cIn CHARACTER
+C:\dev\node\xrefparser\4gl\run\persistent.p C:\dev\node\xrefparser\4gl\run\persistent.p 6 STRING "TEST1" 5 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\run\persistent.p C:\dev\node\xrefparser\4gl\run\persistent.p 10 PRIVATE-PROCEDURE testPrivate,,
+C:\dev\node\xrefparser\4gl\run\persistent.p C:\dev\node\xrefparser\4gl\run\persistent.p 10 STRING "TESTPRIVATE" 11 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\run\persistent.p C:\dev\node\xrefparser\4gl\run\persistent.p 12 STRING "after" 5 NONE TRANSLATABLE 

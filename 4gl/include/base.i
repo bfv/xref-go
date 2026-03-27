@@ -1,0 +1,1 @@
+&scoped-define hello "hello"

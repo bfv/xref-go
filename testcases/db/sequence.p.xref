@@ -1,0 +1,7 @@
+C:\dev\node\xrefparser\4gl\db\sequence.p C:\dev\node\xrefparser\4gl\db\sequence.p 1 COMPILE C:\dev\node\xrefparser\4gl/db\sequence.p
+C:\dev\node\xrefparser\4gl\db\sequence.p C:\dev\node\xrefparser\4gl\db\sequence.p 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\db\sequence.p C:\dev\node\xrefparser\4gl\db\sequence.p 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\db\sequence.p C:\dev\node\xrefparser\4gl\db\sequence.p 2 STRING "nextcustnum" 11 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\sequence.p C:\dev\node\xrefparser\4gl\db\sequence.p 5 STRING "_Sequence" 9 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\sequence.p C:\dev\node\xrefparser\4gl\db\sequence.p 5 ACCESS sports2000.NextCustNum SEQUENCE
+C:\dev\node\xrefparser\4gl\db\sequence.p C:\dev\node\xrefparser\4gl\db\sequence.p 5 UPDATE sports2000.NextCustNum SEQUENCE

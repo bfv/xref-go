@@ -1,0 +1,28 @@
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 1 COMPILE C:\dev\node\xrefparser\4gl/db\test_like.p
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "ttcustomer" 10 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "CustNum" 7 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "Country" 7 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "Name" 4 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "Address" 7 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "Address2" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "City" 4 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "State" 5 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "PostalCode" 10 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "Contact" 7 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "Phone" 5 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "SalesRep" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "CreditLimit" 11 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "Balance" 7 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "Terms" 5 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "Discount" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "Comments" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "Fax" 3 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "EmailAddress" 12 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 REFERENCE sports2000.Customer 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "Comments" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "CountryPost" 11 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "CustNum" 7 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "Name" 4 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_like.p C:\dev\node\xrefparser\4gl\db\test_like.p 2 STRING "SalesRep" 8 NONE UNTRANSLATABLE 

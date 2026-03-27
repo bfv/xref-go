@@ -1,0 +1,13 @@
+C:\dev\node\xrefparser\4gl\oo\OrderBT.cls C:\dev\node\xrefparser\4gl\oo\OrderBT.cls 1 COMPILE C:\dev\node\xrefparser\4gl/oo\OrderBT.cls
+C:\dev\node\xrefparser\4gl\oo\OrderBT.cls C:\dev\node\xrefparser\4gl\oo\OrderBT.cls 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\oo\OrderBT.cls C:\dev\node\xrefparser\4gl\oo\OrderBT.cls 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\oo\OrderBT.cls C:\dev\node\xrefparser\4gl\oo\OrderBT.cls 14 BLOCK-LEVEL ON ERROR UNDO, THROW
+C:\dev\node\xrefparser\4gl\oo\OrderBT.cls C:\dev\node\xrefparser\4gl\oo\OrderBT.cls 16 CLASS oo.OrderBT,,,,,,
+C:\dev\node\xrefparser\4gl\oo\OrderBT.cls C:\dev\node\xrefparser\4gl\oo\OrderBT.cls 16 STRING "oo.OrderBT" 10 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\OrderBT.cls C:\dev\node\xrefparser\4gl\oo\OrderBT.cls 18 STRING "currentOrder" 12 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\OrderBT.cls C:\dev\node\xrefparser\4gl\oo\OrderBT.cls 18 PROPERTY PUBLIC,,,,,currentOrder
+C:\dev\node\xrefparser\4gl\oo\OrderBT.cls C:\dev\node\xrefparser\4gl\oo\OrderBT.cls 22 CONSTRUCTOR PUBLIC,,,,OrderBT,void,
+C:\dev\node\xrefparser\4gl\oo\OrderBT.cls C:\dev\node\xrefparser\4gl\oo\OrderBT.cls 22 STRING "ORDERBT" 7 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\OrderBT.cls C:\dev\node\xrefparser\4gl\oo\OrderBT.cls 24 STRING "orderNumber" 11 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\OrderBT.cls C:\dev\node\xrefparser\4gl\oo\OrderBT.cls 26 CONSTRUCTOR PUBLIC,,,,OrderBT,void,INPUT orderNumber INTEGER
+C:\dev\node\xrefparser\4gl\oo\OrderBT.cls C:\dev\node\xrefparser\4gl\oo\OrderBT.cls 26 STRING "ORDERBT" 7 NONE UNTRANSLATABLE 

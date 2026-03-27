@@ -1,0 +1,61 @@
+<project name="build" default="build" basedir=".">
+
+  <taskdef resource="PCT.properties" />
+  <typedef resource="types.properties" />
+  <property environment="env"/>
+
+  <target name="build" depends="initvars,init">
+  	<antcall target="builddb" />
+    <antcall target="compile" />
+  	<antcall target="cleanup" />
+  </target>
+
+  <target name="initvars">
+    <property name="srcdir" location="." />
+    <property name="rootdir" location="./.." />
+    <property name="builddir" location="${rootdir}/build" />
+  	<property name="xrefdir" location="${rootdir}/testcases" />
+  	<property name="dbdir" location="${builddir}/sports2000" />
+  	
+    <echo message="rootdir:       ${rootdir}" />
+    <echo message="srcdir:        ${srcdir}" />
+    <echo message="builddir:      ${builddir}" />
+    <echo message="DLC:           ${DLC}" />
+  </target>
+
+  <target name="init">
+    <delete dir="${builddir}" failonerror="false" />
+    <mkdir dir="${builddir}" />
+  </target>
+
+  <target name="builddb">
+  	<mkdir dir="${dbdir}" />
+    <PCTCreateBase dbname="sports2000" destdir="${dbdir}" dlchome="${DLC}" schemafile="${srcdir}/schema/sports2000.df" structfile="${srcdir}/schema/sports2000.st" />
+	</target>
+	
+	<target name="compile">
+    <PCTCompile destdir="${builddir}" dlchome="${DLC}" stopOnError="true" graphicalMode="true" forceCompile="true" MD5="true" keepXref="true" xrefDir="${xrefdir}">
+      <DBConnection dbName="sports2000" dbDir="${dbdir}" singleUser="true" />
+      <propath>
+        <pathelement path="${srcdir}" />
+      </propath>
+      <fileset dir="${srcdir}">
+        <include name="**/*.p" />
+        <include name="**/*.w" />
+        <include name="**/*.cls" />
+      </fileset>
+    </PCTCompile>
+  </target>
+  
+	<target name="cleanup">
+		<delete>
+		  <fileset dir="${xrefdir}">
+		  	<include name="**/*.hierarchy" />
+		  	<include name="**/*/*.inc" />
+		  	<include name="**/*/*.crc" />
+		  </fileset>
+		</delete>
+		<delete dir="${builddir}" failonerror="false" />
+	</target>
+			
+</project>

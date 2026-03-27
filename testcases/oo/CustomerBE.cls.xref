@@ -1,0 +1,20 @@
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 1 COMPILE C:\dev\node\xrefparser\4gl/oo\CustomerBE.cls
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 14 BLOCK-LEVEL ON ERROR UNDO, THROW
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 16 CLASS oo.CustomerBE,,,,,,
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 16 STRING "oo.CustomerBE" 13 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 18 STRING "custName" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 19 STRING "b-customer" 10 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 19 STRING "Customer" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 20 ACCESS sports2000.Customer Name 
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 20 SEARCH sports2000.Customer Name
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 23 METHOD PUBLIC,,,,,GetByName,void,INPUT custName CHARACTER
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 23 STRING "GETBYNAME" 9 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 26 STRING "Customer" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 26 ACCESS sports2000.Customer Discount 
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 26 SEARCH sports2000.Customer CustNum TABLE-SCAN
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 29 METHOD PUBLIC,,,,,GetNoIndex,void,
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 29 STRING "GETNOINDEX" 10 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 31 CONSTRUCTOR PUBLIC,,,,CustomerBE,void,
+C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls C:\dev\node\xrefparser\4gl\oo\CustomerBE.cls 31 STRING "CUSTOMERBE" 10 NONE UNTRANSLATABLE 

@@ -1,0 +1,14 @@
+## tech stack
+- Go 1.26
+  - use cobra/viper for parameters
+    - go get github.com/spf13/viper v1.21.0
+    - go get -u github.com/spf13/cobra@latest
+  - use zerolog for logging
+- We use `make` for building
+- We use `goreleaser` for releasing
+- output is for windows (x64 only) and linux (x64 only)
+- the sources are in `cmd/xref`, the default structure for Go CLI tools
+- main.go drives the command. all subcommands are in separate files in the `cmd/xref/commands` directory
+- data structures in `models.go`
+- logging related in `logging.go`
+- split up code in logical files

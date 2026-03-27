@@ -1,0 +1,21 @@
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 1 COMPILE C:\dev\node\xrefparser\4gl/tt\TTTestClass.cls
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 14 BLOCK-LEVEL ON ERROR UNDO, THROW
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 16 CLASS tt.TTTestClass,,,,,,
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 16 STRING "tt.TTTestClass" 14 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 18 INCLUDE "tt/tttest.i &accessor=""protected"""
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\tttest.i 1 STRING "tttest" 6 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\tttest.i 1 STRING "ctest" 5 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\tttest.i 1 STRING "itest" 5 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\tttest.i 1 DATA-MEMBER PROTECTED,,TEMPTABLE,tttest
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 21 ACCESS DATA-MEMBER tt.TTTestClass:tttest ctest TEMPTABLE
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 21 STRING "hoppa" 5 NONE TRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 21 SEARCH DATA-MEMBER tt.TTTestClass:tttest default TEMPTABLE WHOLE-INDEX
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 22 ACCESS DATA-MEMBER tt.TTTestClass:tttest itest TEMPTABLE
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 22 UPDATE DATA-MEMBER tt.TTTestClass:tttest itest TEMPTABLE 
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 23 METHOD PUBLIC,,,,,updateAccess,void,
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 23 STRING "UPDATEACCESS" 12 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 25 CONSTRUCTOR PUBLIC,,,,TTTestClass,void,
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 25 STRING "TTTESTCLASS" 11 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls C:\dev\node\xrefparser\4gl\tt\TTTestClass.cls 25 STRING "default" 7 NONE UNTRANSLATABLE 

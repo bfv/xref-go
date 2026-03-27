@@ -1,0 +1,41 @@
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 1 COMPILE C:\dev\node\xrefparser\4gl/oo\DeliverAddress.cls
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 14 BLOCK-LEVEL ON ERROR UNDO, THROW
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 16 CLASS oo.DeliverAddress,INHERITS oo.Address oo.AddressBase,,,FINAL,,
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 16 STRING "oo.DeliverAddress" 17 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 16 STRING "oo.AddressBase" 14 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 16 STRING "oo.Address" 10 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 18 STRING "Floor" 5 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 18 PROPERTY PUBLIC,,,,,Floor
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 19 STRING "tttest" 6 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 19 STRING "itest" 5 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 19 STRING "ctest" 5 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 26 CONSTRUCTOR PUBLIC,,,,DeliverAddress,void,
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 26 STRING "DELIVERADDRESS" 14 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 28 STRING "address" 7 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 30 CONSTRUCTOR PUBLIC,,,,DeliverAddress,void,INPUT address OO.ADDRESS
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 30 STRING "DELIVERADDRESS" 14 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 32 STRING "countAddress" 12 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 34 CONSTRUCTOR PROTECTED,,,,DeliverAddress,void,INPUT countAddress INTEGER
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 34 STRING "DELIVERADDRESS" 14 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 38 CONSTRUCTOR ,STATIC,,,DeliverAddress,void,
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 38 STRING "DELIVERADDRESS" 14 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 40 STRING "cIn" 3 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 40 STRING "iIn" 3 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 40 STRING "cOut" 4 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 40 STRING "testIO" 6 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 43 METHOD PUBLIC,,,FINAL,,MultipleParameters,character,INPUT cIn CHARACTER,INPUT iIn INTEGER,OUTPUT cOut OO.ADDRESS,INPUT-OUTPUT testIO CHARACTER
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 43 STRING "MULTIPLEPARAMETERS" 18 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 45 STRING "tttest" 6 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 45 STRING "b-tttest" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 45 STRING "b-tttest" 8 LEFT TRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 47 METHOD PUBLIC,,,,,BufferParameter,void,BUFFER b-tttest tttest
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 47 STRING "BUFFERPARAMETER" 15 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 51 METHOD PROTECTED,,,,,TableParameter,void,OUTPUT tttest TABLE
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 51 STRING "TABLEPARAMETER" 14 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 53 STRING "itest" 5 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls IMPLICIT INVOKE oo.Address:Address
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls IMPLICIT INVOKE oo.Address:Address
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls IMPLICIT INVOKE oo.Address:Address
+C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls C:\dev\node\xrefparser\4gl\oo\DeliverAddress.cls 41 NEW oo.Address

@@ -1,0 +1,6 @@
+C:\dev\node\xrefparser\4gl\run\proc1.p C:\dev\node\xrefparser\4gl\run\proc1.p 1 COMPILE C:\dev\node\xrefparser\4gl/run\proc1.p
+C:\dev\node\xrefparser\4gl\run\proc1.p C:\dev\node\xrefparser\4gl\run\proc1.p 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\run\proc1.p C:\dev\node\xrefparser\4gl\run\proc1.p 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\run\proc1.p C:\dev\node\xrefparser\4gl\run\proc1.p 2 STRING "test input" 10 NONE TRANSLATABLE 
+C:\dev\node\xrefparser\4gl\run\proc1.p C:\dev\node\xrefparser\4gl\run\proc1.p 2 RUN xref/oo/proc2.p
+C:\dev\node\xrefparser\4gl\run\proc1.p C:\dev\node\xrefparser\4gl\run\proc1.p 3 RUN xref/oo/proc3.p

@@ -1,0 +1,27 @@
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 1 COMPILE C:\dev\node\xrefparser\4gl/tt\mixedttdb.p
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 2 INCLUDE tt/ttsports.i
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "ttsports" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "name" 4 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "ordernum" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\ttsports.i 1 STRING "itemnum" 7 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 5 STRING "abc" 3 NONE TRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 15 SEARCH ttsports default TEMPTABLE WHOLE-INDEX
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 16 STRING "Order" 5 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 16 ACCESS sports2000.Order Ordernum 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 16 SEARCH sports2000.Order OrderNum
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 17 ACCESS sports2000.Order OrderStatus 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 17 STRING "x(8)" 4 NONE TRANSLATABLE  FORMAT 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 17 STRING "Ordered" 7 NONE TRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 17 STRING "Back Ordered" 12 NONE TRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 17 STRING "Partially Shipped" 17 NONE TRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 17 STRING "Shipped" 7 NONE TRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 17 STRING "x(20)" 5 NONE TRANSLATABLE  FORMAT 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 20 STRING "name" 4 LEFT TRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 20 STRING "Order Status" 12 LEFT TRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 20 STRING "OrderStatus" 11 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 20 STRING "-------------- -------------------------" 40 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 20 PROCEDURE testMixed,,
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 20 STRING "TESTMIXED" 9 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\tt\mixedttdb.p C:\dev\node\xrefparser\4gl\tt\mixedttdb.p 20 STRING "default" 7 NONE UNTRANSLATABLE 

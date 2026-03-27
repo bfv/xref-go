@@ -1,0 +1,12 @@
+C:\dev\node\xrefparser\4gl\run\master.p C:\dev\node\xrefparser\4gl\run\master.p 1 COMPILE C:\dev\node\xrefparser\4gl/run\master.p
+C:\dev\node\xrefparser\4gl\run\master.p C:\dev\node\xrefparser\4gl\run\master.p 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\run\master.p C:\dev\node\xrefparser\4gl\run\master.p 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\run\master.p C:\dev\node\xrefparser\4gl\run\master.p 2 STRING "procje" 6 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\run\master.p C:\dev\node\xrefparser\4gl\run\master.p 3 STRING "hproc" 5 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\run\master.p C:\dev\node\xrefparser\4gl\run\master.p 5 STRING "xref/oo/proc1.p" 15 NONE TRANSLATABLE 
+C:\dev\node\xrefparser\4gl\run\master.p C:\dev\node\xrefparser\4gl\run\master.p 13 STRING "hi!" 3 NONE TRANSLATABLE 
+C:\dev\node\xrefparser\4gl\run\master.p C:\dev\node\xrefparser\4gl\run\master.p 7 RUN xref/oo/proc1.p
+C:\dev\node\xrefparser\4gl\run\master.p C:\dev\node\xrefparser\4gl\run\master.p 8 RUN xref/oo/proc2.p
+C:\dev\node\xrefparser\4gl\run\master.p C:\dev\node\xrefparser\4gl\run\master.p 10 RUN value(procje)
+C:\dev\node\xrefparser\4gl\run\master.p C:\dev\node\xrefparser\4gl\run\master.p 12 RUN xref/oo/persistent.p PERSISTENT
+C:\dev\node\xrefparser\4gl\run\master.p C:\dev\node\xrefparser\4gl\run\master.p 13 RUN test1

@@ -1,0 +1,13 @@
+C:\dev\node\xrefparser\4gl\db\test_reference_update.p C:\dev\node\xrefparser\4gl\db\test_reference_update.p 1 COMPILE C:\dev\node\xrefparser\4gl/db\test_reference_update.p
+C:\dev\node\xrefparser\4gl\db\test_reference_update.p C:\dev\node\xrefparser\4gl\db\test_reference_update.p 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\db\test_reference_update.p C:\dev\node\xrefparser\4gl\db\test_reference_update.p 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\db\test_reference_update.p C:\dev\node\xrefparser\4gl\db\test_reference_update.p 2 STRING "ttcustomer" 10 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_reference_update.p C:\dev\node\xrefparser\4gl\db\test_reference_update.p 2 STRING "custnum" 7 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_reference_update.p C:\dev\node\xrefparser\4gl\db\test_reference_update.p 2 REFERENCE sports2000.Customer CustNum 
+C:\dev\node\xrefparser\4gl\db\test_reference_update.p C:\dev\node\xrefparser\4gl\db\test_reference_update.p 6 STRING "Customer" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_reference_update.p C:\dev\node\xrefparser\4gl\db\test_reference_update.p 6 SEARCH sports2000.Customer CustNum WHOLE-INDEX
+C:\dev\node\xrefparser\4gl\db\test_reference_update.p C:\dev\node\xrefparser\4gl\db\test_reference_update.p 8 ACCESS sports2000.Customer CustNum 
+C:\dev\node\xrefparser\4gl\db\test_reference_update.p C:\dev\node\xrefparser\4gl\db\test_reference_update.p 11 ACCESS sports2000.Customer CreditLimit 
+C:\dev\node\xrefparser\4gl\db\test_reference_update.p C:\dev\node\xrefparser\4gl\db\test_reference_update.p 11 ACCESS sports2000.Customer CreditLimit 
+C:\dev\node\xrefparser\4gl\db\test_reference_update.p C:\dev\node\xrefparser\4gl\db\test_reference_update.p 11 UPDATE sports2000.Customer CreditLimit
+C:\dev\node\xrefparser\4gl\db\test_reference_update.p C:\dev\node\xrefparser\4gl\db\test_reference_update.p 11 STRING "default" 7 NONE UNTRANSLATABLE 

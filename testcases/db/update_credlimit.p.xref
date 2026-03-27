@@ -1,0 +1,8 @@
+C:\dev\node\xrefparser\4gl\db\update_credlimit.p C:\dev\node\xrefparser\4gl\db\update_credlimit.p 1 COMPILE C:\dev\node\xrefparser\4gl/db\update_credlimit.p
+C:\dev\node\xrefparser\4gl\db\update_credlimit.p C:\dev\node\xrefparser\4gl\db\update_credlimit.p 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\db\update_credlimit.p C:\dev\node\xrefparser\4gl\db\update_credlimit.p 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\db\update_credlimit.p C:\dev\node\xrefparser\4gl\db\update_credlimit.p 2 STRING "Customer" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\update_credlimit.p C:\dev\node\xrefparser\4gl\db\update_credlimit.p 2 SEARCH sports2000.Customer CustNum WHOLE-INDEX
+C:\dev\node\xrefparser\4gl\db\update_credlimit.p C:\dev\node\xrefparser\4gl\db\update_credlimit.p 3 ACCESS sports2000.Customer CreditLimit 
+C:\dev\node\xrefparser\4gl\db\update_credlimit.p C:\dev\node\xrefparser\4gl\db\update_credlimit.p 3 ACCESS sports2000.Customer CreditLimit 
+C:\dev\node\xrefparser\4gl\db\update_credlimit.p C:\dev\node\xrefparser\4gl\db\update_credlimit.p 3 UPDATE sports2000.Customer CreditLimit

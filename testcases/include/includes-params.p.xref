@@ -1,0 +1,25 @@
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\includes-params.p 1 COMPILE C:\dev\node\xrefparser\4gl/include\includes-params.p
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\includes-params.p 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\includes-params.p 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\includes-params.p 2 INCLUDE include/base.i
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\includes-params.p 3 INCLUDE "include/dsfamily.i &test=""testing12"""
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\dsfamily.i 2 INCLUDE "include/ttparent.i &test=""testing12"""
+C:\dev\node\xrefparser\4gl\include\dsfamily.i C:\dev\node\xrefparser\4gl\include\ttparent.i 2 STRING "ttparent" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\include\dsfamily.i C:\dev\node\xrefparser\4gl\include\ttparent.i 2 STRING "parent_id" 9 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\include\dsfamily.i C:\dev\node\xrefparser\4gl\include\ttparent.i 2 STRING "parentname" 10 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\dsfamily.i 3 INCLUDE "include/ttchild.i &test=""testing12"""
+C:\dev\node\xrefparser\4gl\include\dsfamily.i C:\dev\node\xrefparser\4gl\include\ttchild.i 2 STRING "ttchild" 7 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\include\dsfamily.i C:\dev\node\xrefparser\4gl\include\ttchild.i 2 STRING "child_id" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\include\dsfamily.i C:\dev\node\xrefparser\4gl\include\ttchild.i 2 STRING "parent_id" 9 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\include\dsfamily.i C:\dev\node\xrefparser\4gl\include\ttchild.i 2 STRING "childname" 9 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\dsfamily.i 5 REFERENCE ttparent parent_id TEMPTABLE
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\dsfamily.i 5 REFERENCE ttchild parent_id TEMPTABLE
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\dsfamily.i 5 DATASET dsfamily,,,,,ttparent ttchild DATALINKS 1 parent_child 0 ttparent ttchild 1 parent_id parent_id
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\includes-params.p 6 STRING "parent1" 7 NONE TRANSLATABLE 
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\includes-params.p 12 STRING "child1" 6 NONE TRANSLATABLE 
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\includes-params.p 19 STRING "child2" 6 NONE TRANSLATABLE 
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\includes-params.p 19 STRING "default" 7 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\includes-params.p 19 STRING "default" 7 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\includes-params.p 19 STRING "dsfamily" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\includes-params.p 19 STRING "parent_id,parent_id" 19 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\include\includes-params.p C:\dev\node\xrefparser\4gl\include\includes-params.p 19 STRING "parent_child" 12 NONE UNTRANSLATABLE 

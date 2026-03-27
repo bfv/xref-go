@@ -1,0 +1,7 @@
+C:\dev\node\xrefparser\4gl\db\test_reference_only.p C:\dev\node\xrefparser\4gl\db\test_reference_only.p 1 COMPILE C:\dev\node\xrefparser\4gl/db\test_reference_only.p
+C:\dev\node\xrefparser\4gl\db\test_reference_only.p C:\dev\node\xrefparser\4gl\db\test_reference_only.p 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\db\test_reference_only.p C:\dev\node\xrefparser\4gl\db\test_reference_only.p 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\db\test_reference_only.p C:\dev\node\xrefparser\4gl\db\test_reference_only.p 2 STRING "ttcustomer" 10 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_reference_only.p C:\dev\node\xrefparser\4gl\db\test_reference_only.p 2 STRING "custnum" 7 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\db\test_reference_only.p C:\dev\node\xrefparser\4gl\db\test_reference_only.p 2 REFERENCE sports2000.Customer CustNum 
+C:\dev\node\xrefparser\4gl\db\test_reference_only.p C:\dev\node\xrefparser\4gl\db\test_reference_only.p 2 STRING "default" 7 NONE UNTRANSLATABLE 

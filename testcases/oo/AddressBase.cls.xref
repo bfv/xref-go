@@ -1,0 +1,15 @@
+C:\dev\node\xrefparser\4gl\oo\AddressBase.cls C:\dev\node\xrefparser\4gl\oo\AddressBase.cls 1 COMPILE C:\dev\node\xrefparser\4gl/oo\AddressBase.cls
+C:\dev\node\xrefparser\4gl\oo\AddressBase.cls C:\dev\node\xrefparser\4gl\oo\AddressBase.cls 1 CPINTERNAL UTF-8
+C:\dev\node\xrefparser\4gl\oo\AddressBase.cls C:\dev\node\xrefparser\4gl\oo\AddressBase.cls 1 CPSTREAM UTF-8
+C:\dev\node\xrefparser\4gl\oo\AddressBase.cls C:\dev\node\xrefparser\4gl\oo\AddressBase.cls 16 BLOCK-LEVEL ON ERROR UNDO, THROW
+C:\dev\node\xrefparser\4gl\oo\AddressBase.cls C:\dev\node\xrefparser\4gl\oo\AddressBase.cls 18 CLASS oo.AddressBase,,IMPLEMENTS oo.IBase,,,ABSTRACT,
+C:\dev\node\xrefparser\4gl\oo\AddressBase.cls C:\dev\node\xrefparser\4gl\oo\AddressBase.cls 18 STRING "oo.AddressBase" 14 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\AddressBase.cls C:\dev\node\xrefparser\4gl\oo\AddressBase.cls 18 STRING "oo.IBase" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\AddressBase.cls C:\dev\node\xrefparser\4gl\oo\AddressBase.cls 20 STRING "adress" 6 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\AddressBase.cls C:\dev\node\xrefparser\4gl\oo\AddressBase.cls 20 METHOD PUBLIC,,,,ABSTRACT,MoveTo,void,INPUT adress OO.ADDRESS
+C:\dev\node\xrefparser\4gl\oo\AddressBase.cls C:\dev\node\xrefparser\4gl\oo\AddressBase.cls 20 STRING "MOVETO" 6 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\AddressBase.cls C:\dev\node\xrefparser\4gl\oo\AddressBase.cls 21 STRING "name" 4 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\AddressBase.cls C:\dev\node\xrefparser\4gl\oo\AddressBase.cls 21 METHOD PUBLIC,,,,,Identify,character,INPUT name CHARACTER
+C:\dev\node\xrefparser\4gl\oo\AddressBase.cls C:\dev\node\xrefparser\4gl\oo\AddressBase.cls 21 STRING "IDENTIFY" 8 NONE UNTRANSLATABLE 
+C:\dev\node\xrefparser\4gl\oo\AddressBase.cls C:\dev\node\xrefparser\4gl\oo\AddressBase.cls 23 CONSTRUCTOR PUBLIC,,,,AddressBase,void,
+C:\dev\node\xrefparser\4gl\oo\AddressBase.cls C:\dev\node\xrefparser\4gl\oo\AddressBase.cls 23 STRING "ADDRESSBASE" 11 NONE UNTRANSLATABLE 
