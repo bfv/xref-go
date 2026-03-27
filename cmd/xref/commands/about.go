@@ -16,7 +16,7 @@ func NewAboutCmd(version string) *cobra.Command {
 			fmt.Println("Version:", version)
 			fmt.Println("Author:  Bronco Oostermeyer <dev@bfv.io>")
 			fmt.Println("License: MIT")
-			fmt.Println("Repo:    https://github.com/bfv/xref")
+			fmt.Println("Repo:    https://github.com/bfv/xref-go")
 		},
 	}
 }
