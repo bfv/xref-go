@@ -129,6 +129,35 @@ func TestXrefLineParse(t *testing.T) {
 	}
 }
 
+func TestParseFileCreateTable(t *testing.T) {
+	p := NewParser(nil)
+	result := p.ParseDir(testdataDir(), "")
+
+	xf := findXrefFile(result, "db/create-customer.p.xref")
+	if xf == nil {
+		t.Fatal("create-customer.p.xref not found in results")
+	}
+
+	if len(xf.Tables) == 0 {
+		t.Fatal("expected at least 1 table, got 0")
+	}
+
+	var customerTable *models.Table
+	for i := range xf.Tables {
+		if xf.Tables[i].Name == "Customer" {
+			customerTable = &xf.Tables[i]
+			break
+		}
+	}
+	if customerTable == nil {
+		t.Fatal("expected Customer table in tables")
+	}
+
+	if !customerTable.IsCreated {
+		t.Error("expected IsCreated=true for Customer table in create-customer.p.xref")
+	}
+}
+
 func findXrefFile(files []*models.XrefFile, name string) *models.XrefFile {
 	for _, f := range files {
 		if strings.HasSuffix(f.XrefFilePath, name) {

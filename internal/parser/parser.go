@@ -175,7 +175,8 @@ func (p *Parser) parseFile(file, xrefBaseDir, sourceBaseDir string) *models.Xref
 func (p *Parser) processXrefLine(xl *XrefLine, xf *models.XrefFile) {
 	if containsStr(p.crudTypes, xl.Type) {
 		parts := strings.SplitN(xl.Info, " ", 3)
-		if len(parts) >= 2 && parts[1] != "SEQUENCE" {
+		isSequence := len(parts) >= 2 && parts[1] == "SEQUENCE"
+		if !isSequence {
 			p.processCrud(xl, xf)
 		}
 		return
