@@ -1,7 +1,7 @@
-C:\dev\go\xref\4gl\db\update_credlimit.p C:\dev\go\xref\4gl\db\update_credlimit.p 1 COMPILE C:\dev\go\xref\4gl/db\update_credlimit.p
-C:\dev\go\xref\4gl\db\update_credlimit.p C:\dev\go\xref\4gl\db\update_credlimit.p 1 CPINTERNAL UTF-8
-C:\dev\go\xref\4gl\db\update_credlimit.p C:\dev\go\xref\4gl\db\update_credlimit.p 1 CPSTREAM UTF-8
-C:\dev\go\xref\4gl\db\update_credlimit.p C:\dev\go\xref\4gl\db\update_credlimit.p 2 STRING "Customer" 8 NONE UNTRANSLATABLE 
-C:\dev\go\xref\4gl\db\update_credlimit.p C:\dev\go\xref\4gl\db\update_credlimit.p 2 SEARCH sports2000.Customer CustNum WHOLE-INDEX
-C:\dev\go\xref\4gl\db\update_credlimit.p C:\dev\go\xref\4gl\db\update_credlimit.p 3 ACCESS sports2000.Customer CreditLimit 
-C:\dev\go\xref\4gl\db\update_credlimit.p C:\dev\go\xref\4gl\db\update_credlimit.p 3 UPDATE sports2000.Customer CreditLimit
+db/update_credlimit.p db/update_credlimit.p 1 COMPILE db/update_credlimit.p
+db/update_credlimit.p db/update_credlimit.p 1 CPINTERNAL UTF-8
+db/update_credlimit.p db/update_credlimit.p 1 CPSTREAM UTF-8
+db/update_credlimit.p db/update_credlimit.p 2 STRING "Customer" 8 NONE UNTRANSLATABLE 
+db/update_credlimit.p db/update_credlimit.p 2 SEARCH sports2000.Customer CustNum WHOLE-INDEX
+db/update_credlimit.p db/update_credlimit.p 3 ACCESS sports2000.Customer CreditLimit 
+db/update_credlimit.p db/update_credlimit.p 3 UPDATE sports2000.Customer CreditLimit

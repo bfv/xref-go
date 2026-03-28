@@ -1,4 +1,4 @@
-C:\dev\go\xref\4gl\hello\helloworld.p C:\dev\go\xref\4gl\hello\helloworld.p 1 COMPILE C:\dev\go\xref\4gl/hello\helloworld.p
-C:\dev\go\xref\4gl\hello\helloworld.p C:\dev\go\xref\4gl\hello\helloworld.p 1 CPINTERNAL UTF-8
-C:\dev\go\xref\4gl\hello\helloworld.p C:\dev\go\xref\4gl\hello\helloworld.p 1 CPSTREAM UTF-8
-C:\dev\go\xref\4gl\hello\helloworld.p C:\dev\go\xref\4gl\hello\helloworld.p 2 STRING "hello world!" 12 NONE TRANSLATABLE 
+hello/helloworld.p hello/helloworld.p 1 COMPILE hello/helloworld.p
+hello/helloworld.p hello/helloworld.p 1 CPINTERNAL UTF-8
+hello/helloworld.p hello/helloworld.p 1 CPSTREAM UTF-8
+hello/helloworld.p hello/helloworld.p 2 STRING "hello world!" 12 NONE TRANSLATABLE 

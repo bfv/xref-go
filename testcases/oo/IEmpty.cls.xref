@@ -1,5 +1,5 @@
-C:\dev\go\xref\4gl\oo\IEmpty.cls C:\dev\go\xref\4gl\oo\IEmpty.cls 1 COMPILE C:\dev\go\xref\4gl/oo\IEmpty.cls
-C:\dev\go\xref\4gl\oo\IEmpty.cls C:\dev\go\xref\4gl\oo\IEmpty.cls 1 CPINTERNAL UTF-8
-C:\dev\go\xref\4gl\oo\IEmpty.cls C:\dev\go\xref\4gl\oo\IEmpty.cls 1 CPSTREAM UTF-8
-C:\dev\go\xref\4gl\oo\IEmpty.cls C:\dev\go\xref\4gl\oo\IEmpty.cls 14 INTERFACE oo.IEmpty,,,,
-C:\dev\go\xref\4gl\oo\IEmpty.cls C:\dev\go\xref\4gl\oo\IEmpty.cls 14 STRING "oo.IEmpty" 9 NONE UNTRANSLATABLE 
+oo/IEmpty.cls oo/IEmpty.cls 1 COMPILE oo/IEmpty.cls
+oo/IEmpty.cls oo/IEmpty.cls 1 CPINTERNAL UTF-8
+oo/IEmpty.cls oo/IEmpty.cls 1 CPSTREAM UTF-8
+oo/IEmpty.cls oo/IEmpty.cls 14 INTERFACE oo.IEmpty,,,,
+oo/IEmpty.cls oo/IEmpty.cls 14 STRING "oo.IEmpty" 9 NONE UNTRANSLATABLE 

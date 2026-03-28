@@ -1,21 +1,21 @@
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 1 COMPILE C:\dev\go\xref\4gl/db\custorderline.p
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 1 CPINTERNAL UTF-8
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 1 CPSTREAM UTF-8
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 2 STRING "ttsports" 8 NONE UNTRANSLATABLE 
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 2 STRING "name" 4 NONE UNTRANSLATABLE 
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 2 STRING "ordernum" 8 NONE UNTRANSLATABLE 
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 2 STRING "itemnum" 7 NONE UNTRANSLATABLE 
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 8 STRING "Customer" 8 NONE UNTRANSLATABLE 
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 8 SEARCH sports2000.Customer CustNum WHOLE-INDEX
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 8 STRING "Order" 5 NONE UNTRANSLATABLE 
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 8 ACCESS sports2000.Order CustNum 
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 8 ACCESS sports2000.Customer CustNum 
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 8 SEARCH sports2000.Order CustOrder
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 8 STRING "OrderLine" 9 NONE UNTRANSLATABLE 
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 8 ACCESS sports2000.OrderLine Ordernum 
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 8 ACCESS sports2000.Order Ordernum 
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 8 SEARCH sports2000.OrderLine orderline
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 13 ACCESS sports2000.Customer Name 
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 13 ACCESS sports2000.Order Ordernum 
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 13 ACCESS sports2000.OrderLine Itemnum 
-C:\dev\go\xref\4gl\db\custorderline.p C:\dev\go\xref\4gl\db\custorderline.p 19 STRING "default" 7 NONE UNTRANSLATABLE 
+db/custorderline.p db/custorderline.p 1 COMPILE db/custorderline.p
+db/custorderline.p db/custorderline.p 1 CPINTERNAL UTF-8
+db/custorderline.p db/custorderline.p 1 CPSTREAM UTF-8
+db/custorderline.p db/custorderline.p 2 STRING "ttsports" 8 NONE UNTRANSLATABLE 
+db/custorderline.p db/custorderline.p 2 STRING "name" 4 NONE UNTRANSLATABLE 
+db/custorderline.p db/custorderline.p 2 STRING "ordernum" 8 NONE UNTRANSLATABLE 
+db/custorderline.p db/custorderline.p 2 STRING "itemnum" 7 NONE UNTRANSLATABLE 
+db/custorderline.p db/custorderline.p 8 STRING "Customer" 8 NONE UNTRANSLATABLE 
+db/custorderline.p db/custorderline.p 8 SEARCH sports2000.Customer CustNum WHOLE-INDEX
+db/custorderline.p db/custorderline.p 8 STRING "Order" 5 NONE UNTRANSLATABLE 
+db/custorderline.p db/custorderline.p 8 ACCESS sports2000.Order CustNum 
+db/custorderline.p db/custorderline.p 8 ACCESS sports2000.Customer CustNum 
+db/custorderline.p db/custorderline.p 8 SEARCH sports2000.Order CustOrder
+db/custorderline.p db/custorderline.p 8 STRING "OrderLine" 9 NONE UNTRANSLATABLE 
+db/custorderline.p db/custorderline.p 8 ACCESS sports2000.OrderLine Ordernum 
+db/custorderline.p db/custorderline.p 8 ACCESS sports2000.Order Ordernum 
+db/custorderline.p db/custorderline.p 8 SEARCH sports2000.OrderLine orderline
+db/custorderline.p db/custorderline.p 13 ACCESS sports2000.Customer Name 
+db/custorderline.p db/custorderline.p 13 ACCESS sports2000.Order Ordernum 
+db/custorderline.p db/custorderline.p 13 ACCESS sports2000.OrderLine Itemnum 
+db/custorderline.p db/custorderline.p 19 STRING "default" 7 NONE UNTRANSLATABLE 

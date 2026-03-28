@@ -1,15 +1,15 @@
-C:\dev\go\xref\4gl\oo\AddressBase.cls C:\dev\go\xref\4gl\oo\AddressBase.cls 1 COMPILE C:\dev\go\xref\4gl/oo\AddressBase.cls
-C:\dev\go\xref\4gl\oo\AddressBase.cls C:\dev\go\xref\4gl\oo\AddressBase.cls 1 CPINTERNAL UTF-8
-C:\dev\go\xref\4gl\oo\AddressBase.cls C:\dev\go\xref\4gl\oo\AddressBase.cls 1 CPSTREAM UTF-8
-C:\dev\go\xref\4gl\oo\AddressBase.cls C:\dev\go\xref\4gl\oo\AddressBase.cls 16 BLOCK-LEVEL ON ERROR UNDO, THROW
-C:\dev\go\xref\4gl\oo\AddressBase.cls C:\dev\go\xref\4gl\oo\AddressBase.cls 18 CLASS oo.AddressBase,,IMPLEMENTS oo.IBase,,,ABSTRACT,
-C:\dev\go\xref\4gl\oo\AddressBase.cls C:\dev\go\xref\4gl\oo\AddressBase.cls 18 STRING "oo.AddressBase" 14 NONE UNTRANSLATABLE 
-C:\dev\go\xref\4gl\oo\AddressBase.cls C:\dev\go\xref\4gl\oo\AddressBase.cls 18 STRING "oo.IBase" 8 NONE UNTRANSLATABLE 
-C:\dev\go\xref\4gl\oo\AddressBase.cls C:\dev\go\xref\4gl\oo\AddressBase.cls 20 STRING "adress" 6 NONE UNTRANSLATABLE 
-C:\dev\go\xref\4gl\oo\AddressBase.cls C:\dev\go\xref\4gl\oo\AddressBase.cls 20 METHOD PUBLIC,,,,ABSTRACT,MoveTo,void,INPUT adress OO.ADDRESS
-C:\dev\go\xref\4gl\oo\AddressBase.cls C:\dev\go\xref\4gl\oo\AddressBase.cls 20 STRING "MOVETO" 6 NONE UNTRANSLATABLE 
-C:\dev\go\xref\4gl\oo\AddressBase.cls C:\dev\go\xref\4gl\oo\AddressBase.cls 21 STRING "name" 4 NONE UNTRANSLATABLE 
-C:\dev\go\xref\4gl\oo\AddressBase.cls C:\dev\go\xref\4gl\oo\AddressBase.cls 21 METHOD PUBLIC,,,,,Identify,character,INPUT name CHARACTER
-C:\dev\go\xref\4gl\oo\AddressBase.cls C:\dev\go\xref\4gl\oo\AddressBase.cls 21 STRING "IDENTIFY" 8 NONE UNTRANSLATABLE 
-C:\dev\go\xref\4gl\oo\AddressBase.cls C:\dev\go\xref\4gl\oo\AddressBase.cls 23 CONSTRUCTOR PUBLIC,,,,AddressBase,void,
-C:\dev\go\xref\4gl\oo\AddressBase.cls C:\dev\go\xref\4gl\oo\AddressBase.cls 23 STRING "ADDRESSBASE" 11 NONE UNTRANSLATABLE 
+oo/AddressBase.cls oo/AddressBase.cls 1 COMPILE oo/AddressBase.cls
+oo/AddressBase.cls oo/AddressBase.cls 1 CPINTERNAL UTF-8
+oo/AddressBase.cls oo/AddressBase.cls 1 CPSTREAM UTF-8
+oo/AddressBase.cls oo/AddressBase.cls 16 BLOCK-LEVEL ON ERROR UNDO, THROW
+oo/AddressBase.cls oo/AddressBase.cls 18 CLASS oo.AddressBase,,IMPLEMENTS oo.IBase,,,ABSTRACT,
+oo/AddressBase.cls oo/AddressBase.cls 18 STRING "oo.AddressBase" 14 NONE UNTRANSLATABLE 
+oo/AddressBase.cls oo/AddressBase.cls 18 STRING "oo.IBase" 8 NONE UNTRANSLATABLE 
+oo/AddressBase.cls oo/AddressBase.cls 20 STRING "adress" 6 NONE UNTRANSLATABLE 
+oo/AddressBase.cls oo/AddressBase.cls 20 METHOD PUBLIC,,,,ABSTRACT,MoveTo,void,INPUT adress OO.ADDRESS
+oo/AddressBase.cls oo/AddressBase.cls 20 STRING "MOVETO" 6 NONE UNTRANSLATABLE 
+oo/AddressBase.cls oo/AddressBase.cls 21 STRING "name" 4 NONE UNTRANSLATABLE 
+oo/AddressBase.cls oo/AddressBase.cls 21 METHOD PUBLIC,,,,,Identify,character,INPUT name CHARACTER
+oo/AddressBase.cls oo/AddressBase.cls 21 STRING "IDENTIFY" 8 NONE UNTRANSLATABLE 
+oo/AddressBase.cls oo/AddressBase.cls 23 CONSTRUCTOR PUBLIC,,,,AddressBase,void,
+oo/AddressBase.cls oo/AddressBase.cls 23 STRING "ADDRESSBASE" 11 NONE UNTRANSLATABLE 

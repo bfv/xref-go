@@ -1,12 +1,12 @@
-C:\dev\go\xref\4gl\db\create-customer.p C:\dev\go\xref\4gl\db\create-customer.p 1 COMPILE C:\dev\go\xref\4gl/db\create-customer.p
-C:\dev\go\xref\4gl\db\create-customer.p C:\dev\go\xref\4gl\db\create-customer.p 1 CPINTERNAL UTF-8
-C:\dev\go\xref\4gl\db\create-customer.p C:\dev\go\xref\4gl\db\create-customer.p 1 CPSTREAM UTF-8
-C:\dev\go\xref\4gl\db\create-customer.p C:\dev\go\xref\4gl\db\create-customer.p 2 STRING "Customer" 8 NONE UNTRANSLATABLE 
-C:\dev\go\xref\4gl\db\create-customer.p C:\dev\go\xref\4gl\db\create-customer.p 2 CREATE sports2000.Customer 
-C:\dev\go\xref\4gl\db\create-customer.p C:\dev\go\xref\4gl\db\create-customer.p 3 ACCESS sports2000.Customer CustNum 
-C:\dev\go\xref\4gl\db\create-customer.p C:\dev\go\xref\4gl\db\create-customer.p 3 ACCESS sports2000.Customer Name 
-C:\dev\go\xref\4gl\db\create-customer.p C:\dev\go\xref\4gl\db\create-customer.p 3 UPDATE sports2000.Customer CustNum
-C:\dev\go\xref\4gl\db\create-customer.p C:\dev\go\xref\4gl\db\create-customer.p 3 STRING "bfv" 3 NONE TRANSLATABLE 
-C:\dev\go\xref\4gl\db\create-customer.p C:\dev\go\xref\4gl\db\create-customer.p 3 UPDATE sports2000.Customer Name
-C:\dev\go\xref\4gl\db\create-customer.p C:\dev\go\xref\4gl\db\create-customer.p 8 REFERENCE sports2000.Customer 
-C:\dev\go\xref\4gl\db\create-customer.p C:\dev\go\xref\4gl\db\create-customer.p 10 REFERENCE sports2000.Customer 
+db/create-customer.p db/create-customer.p 1 COMPILE db/create-customer.p
+db/create-customer.p db/create-customer.p 1 CPINTERNAL UTF-8
+db/create-customer.p db/create-customer.p 1 CPSTREAM UTF-8
+db/create-customer.p db/create-customer.p 2 STRING "Customer" 8 NONE UNTRANSLATABLE 
+db/create-customer.p db/create-customer.p 2 CREATE sports2000.Customer 
+db/create-customer.p db/create-customer.p 3 ACCESS sports2000.Customer CustNum 
+db/create-customer.p db/create-customer.p 3 ACCESS sports2000.Customer Name 
+db/create-customer.p db/create-customer.p 3 UPDATE sports2000.Customer CustNum
+db/create-customer.p db/create-customer.p 3 STRING "bfv" 3 NONE TRANSLATABLE 
+db/create-customer.p db/create-customer.p 3 UPDATE sports2000.Customer Name
+db/create-customer.p db/create-customer.p 8 REFERENCE sports2000.Customer 
+db/create-customer.p db/create-customer.p 10 REFERENCE sports2000.Customer 
