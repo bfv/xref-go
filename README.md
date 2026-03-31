@@ -106,8 +106,23 @@ xref matrix [flags]
 |------|-------|---------|-------------|
 | `--input` | `-i` | `xref.json` | Input JSON data file |
 | `--database` | `-d` | | Filter by database name |
+| `--tables` | `-t` | | Comma-separated list of table names to include |
+| `--tablesfile` | `-f` | | File with table names (one or more per line, comma-separated) |
+| `--noreads` | `-n` | `false` | Only show tables/sources that have creates, updates or deletes |
 
-The matrix shows each source file as a row and each table as a column. Cells contain `C` (create), `U` (update), `D` (delete), `R` (read-only), or `-` (no reference).
+The matrix shows each source file as a row and each table as a column. Cells contain `C` (create), `U` (update), `D` (delete), `R` (read-only), or `-` (no reference). Both rows and columns are sorted alphabetically (case-insensitive).
+
+Use `--tables` or `--tablesfile` to limit the matrix to a specific set of tables. Only sources that reference at least one of the specified tables are included. Both options can be combined; all table names are merged.
+
+The tables file supports one table per line, or multiple tables per line separated by commas:
+
+```
+Customer
+Order,OrderLine
+Item
+```
+
+Use `--noreads` to exclude tables and sources that only have read references, keeping only those with create, update or delete operations.
 
 ## CI/CD example
 
