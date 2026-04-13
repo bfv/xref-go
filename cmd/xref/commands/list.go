@@ -12,11 +12,12 @@ import (
 func NewListCmd() *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "list",
-		Short: "List databases or tables",
+		Short: "List databases, tables or sources",
 		RunE: func(cmd *cobra.Command, args []string) error {
 			input, _ := cmd.Flags().GetString("input")
 			listDbs, _ := cmd.Flags().GetBool("databases")
 			listTables, _ := cmd.Flags().GetBool("tables")
+			listSources, _ := cmd.Flags().GetBool("sources")
 
 			xrefdata, err := datafile.Load(input)
 			if err != nil {
@@ -43,13 +44,23 @@ func NewListCmd() *cobra.Command {
 				return nil
 			}
 
-			return fmt.Errorf("specify --databases or --tables")
+			if listSources {
+				sources := s.GetSourceNames()
+				fmt.Printf("Sources (%d):\n", len(sources))
+				for _, src := range sources {
+					fmt.Println(" ", src)
+				}
+				return nil
+			}
+
+			return fmt.Errorf("specify --databases, --tables or --sources")
 		},
 	}
 
 	cmd.Flags().StringP("input", "i", datafile.DefaultDataFile, "Input JSON data file")
-	cmd.Flags().Bool("databases", false, "List database names")
-	cmd.Flags().Bool("tables", false, "List table names")
+	cmd.Flags().BoolP("databases", "d", false, "List database names")
+	cmd.Flags().BoolP("tables", "t", false, "List table names")
+	cmd.Flags().BoolP("sources", "s", false, "List source files")
 
 	return cmd
 }

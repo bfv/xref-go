@@ -1,6 +1,7 @@
 package searcher
 
 import (
+	"sort"
 	"strings"
 
 	"github.com/bfv/xref/internal/models"
@@ -34,6 +35,9 @@ func (s *Searcher) GetDatabaseNames(sources []string) []string {
 		}
 	}
 
+	sort.Slice(dbnames, func(i, j int) bool {
+		return strings.ToLower(dbnames[i]) < strings.ToLower(dbnames[j])
+	})
 	return dbnames
 }
 
@@ -63,7 +67,30 @@ func (s *Searcher) GetTableNames(sources []string) []models.TableDefinition {
 		}
 	}
 
+	sort.Slice(tables, func(i, j int) bool {
+		ai := strings.ToLower(tables[i].Database + "." + tables[i].Table)
+		bj := strings.ToLower(tables[j].Database + "." + tables[j].Table)
+		return ai < bj
+	})
 	return tables
+}
+
+// GetSourceNames returns the sorted list of source file names across all xref files.
+func (s *Searcher) GetSourceNames() []string {
+	seen := map[string]bool{}
+	var sources []string
+
+	for _, xf := range s.xreffiles {
+		if xf.SourceFile != "" && !seen[xf.SourceFile] {
+			seen[xf.SourceFile] = true
+			sources = append(sources, xf.SourceFile)
+		}
+	}
+
+	sort.Slice(sources, func(i, j int) bool {
+		return strings.ToLower(sources[i]) < strings.ToLower(sources[j])
+	})
+	return sources
 }
 
 // GetTableReferences returns XrefFiles that reference the given table with optional CRUD filters.
