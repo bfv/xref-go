@@ -15,7 +15,7 @@ VERSION=dev-latest
 all: build
 
 # Build targets
-build: build-windows build-linux
+build: build-windows 
 
 build-windows:
 	env GOOS=windows GOARCH=amd64 go build -o $(BUILDDIR)/$(BINARY_WINDOWS) -ldflags "-X main.version=$(VERSION) -w -s" ./cmd/xref
