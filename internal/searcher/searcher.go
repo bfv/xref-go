@@ -214,6 +214,210 @@ func (s *Searcher) GetIncludeReferences(includeName string) []*models.XrefFile {
 	return result
 }
 
+// Dependencies holds the aggregated dependency data for a single source.
+type Dependencies struct {
+	Source       string                    `json:"source"`
+	Tables       []models.Table            `json:"tables"`
+	TempTables   []models.TempTable        `json:"temptables"`
+	Includes     []string                  `json:"includes"`
+	Runs         []models.Run              `json:"runs"`
+	Instantiates []string                  `json:"instantiates"`
+	Invokes      []models.MethodInvocation `json:"invokes"`
+	Class        *models.Class             `json:"class,omitempty"`
+	Interface    *models.Interface         `json:"interface,omitempty"`
+}
+
+// GetDependencies aggregates tables, includes, runs, instantiates, and invokes for a source.
+func (s *Searcher) GetDependencies(source string) *Dependencies {
+	xf := s.GetSourceByName(source)
+	if xf == nil {
+		return nil
+	}
+	return &Dependencies{
+		Source:       xf.SourceFile,
+		Tables:       xf.Tables,
+		TempTables:   xf.TempTables,
+		Includes:     xf.Includes,
+		Runs:         xf.Runs,
+		Instantiates: xf.Instantiates,
+		Invokes:      xf.Invokes,
+		Class:        xf.Class,
+		Interface:    xf.Interface,
+	}
+}
+
+// ClassHierarchyEntry represents a single class/interface in the hierarchy.
+type ClassHierarchyEntry struct {
+	Name       string   `json:"name"`
+	Source     string   `json:"source,omitempty"`
+	Inherits   []string `json:"inherits,omitempty"`
+	Implements []string `json:"implements,omitempty"`
+	Type       string   `json:"type"` // "class" or "interface"
+}
+
+// GetClassHierarchy resolves the full inheritance chain for a given class or interface name.
+// It walks up the inheritance tree, collecting all ancestors.
+func (s *Searcher) GetClassHierarchy(name string) []ClassHierarchyEntry {
+	visited := map[string]bool{}
+	var result []ClassHierarchyEntry
+	s.collectHierarchy(name, visited, &result)
+	return result
+}
+
+func (s *Searcher) collectHierarchy(name string, visited map[string]bool, result *[]ClassHierarchyEntry) {
+	lower := strings.ToLower(name)
+	if visited[lower] {
+		return
+	}
+	visited[lower] = true
+
+	for _, xf := range s.xreffiles {
+		if xf.Class != nil && strings.EqualFold(xf.Class.Name, name) {
+			entry := ClassHierarchyEntry{
+				Name:       xf.Class.Name,
+				Source:     xf.SourceFile,
+				Inherits:   xf.Class.Inherits,
+				Implements: xf.Class.Implements,
+				Type:       "class",
+			}
+			*result = append(*result, entry)
+			for _, parent := range xf.Class.Inherits {
+				s.collectHierarchy(parent, visited, result)
+			}
+			for _, iface := range xf.Class.Implements {
+				s.collectHierarchy(iface, visited, result)
+			}
+			return
+		}
+		if xf.Interface != nil && strings.EqualFold(xf.Interface.Name, name) {
+			entry := ClassHierarchyEntry{
+				Name:     xf.Interface.Name,
+				Source:   xf.SourceFile,
+				Inherits: xf.Interface.Inherits,
+				Type:     "interface",
+			}
+			*result = append(*result, entry)
+			for _, parent := range xf.Interface.Inherits {
+				s.collectHierarchy(parent, visited, result)
+			}
+			return
+		}
+	}
+
+	// Not found in our data — record it as an external/unknown entry
+	*result = append(*result, ClassHierarchyEntry{
+		Name: name,
+		Type: "class",
+	})
+}
+
+// ReverseDependencies holds sources that reference a given source.
+type ReverseDependencies struct {
+	Source         string   `json:"source"`
+	IncludedBy     []string `json:"includedBy"`
+	RunBy          []string `json:"runBy"`
+	InheritedBy    []string `json:"inheritedBy"`
+	InvokedBy      []string `json:"invokedBy"`
+	InstantiatedBy []string `json:"instantiatedBy"`
+}
+
+// GetReverseDependencies finds sources that reference the given source via includes, RUN, inheritance, invokes, or instantiation.
+func (s *Searcher) GetReverseDependencies(source string) *ReverseDependencies {
+	xf := s.GetSourceByName(source)
+	if xf == nil {
+		return nil
+	}
+
+	rd := &ReverseDependencies{
+		Source:         xf.SourceFile,
+		IncludedBy:     []string{},
+		RunBy:          []string{},
+		InheritedBy:    []string{},
+		InvokedBy:      []string{},
+		InstantiatedBy: []string{},
+	}
+
+	// Determine class/interface name for this source
+	var className string
+	if xf.Class != nil {
+		className = xf.Class.Name
+	} else if xf.Interface != nil {
+		className = xf.Interface.Name
+	}
+
+	for _, other := range s.xreffiles {
+		if strings.EqualFold(other.SourceFile, xf.SourceFile) {
+			continue
+		}
+
+		// Check includes
+		for _, inc := range other.Includes {
+			if strings.EqualFold(inc, xf.SourceFile) {
+				rd.IncludedBy = append(rd.IncludedBy, other.SourceFile)
+				break
+			}
+		}
+
+		// Check RUN references
+		for _, run := range other.Runs {
+			if strings.EqualFold(run.Name, xf.SourceFile) {
+				rd.RunBy = append(rd.RunBy, other.SourceFile)
+				break
+			}
+		}
+
+		if className != "" {
+			// Check inheritance (class inherits or interface inherits)
+			if other.Class != nil {
+				for _, parent := range other.Class.Inherits {
+					if strings.EqualFold(parent, className) {
+						rd.InheritedBy = append(rd.InheritedBy, other.SourceFile)
+						break
+					}
+				}
+				for _, iface := range other.Class.Implements {
+					if strings.EqualFold(iface, className) {
+						rd.InheritedBy = append(rd.InheritedBy, other.SourceFile)
+						break
+					}
+				}
+			}
+			if other.Interface != nil {
+				for _, parent := range other.Interface.Inherits {
+					if strings.EqualFold(parent, className) {
+						rd.InheritedBy = append(rd.InheritedBy, other.SourceFile)
+						break
+					}
+				}
+			}
+
+			// Check invokes
+			for _, inv := range other.Invokes {
+				if strings.EqualFold(inv.Class, className) {
+					rd.InvokedBy = append(rd.InvokedBy, other.SourceFile)
+					break
+				}
+			}
+
+			// Check instantiates
+			for _, inst := range other.Instantiates {
+				if strings.EqualFold(inst, className) {
+					rd.InstantiatedBy = append(rd.InstantiatedBy, other.SourceFile)
+					break
+				}
+			}
+		}
+	}
+
+	sort.Strings(rd.IncludedBy)
+	sort.Strings(rd.RunBy)
+	sort.Strings(rd.InheritedBy)
+	sort.Strings(rd.InvokedBy)
+	sort.Strings(rd.InstantiatedBy)
+
+	return rd
+}
+
 // Add merges xreffiles into the searcher, replacing existing entries by sourcefile.
 func (s *Searcher) Add(xreffiles []*models.XrefFile) {
 	for _, xf := range xreffiles {
