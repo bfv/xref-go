@@ -23,7 +23,14 @@
 15. Implement Layer 5 tool handlers
 16. Tests for migration methods
 
-### Phase 4 — Polish
+### Phase 4 — Additional tools
+21. Add `search_sources` tool — filter sources by glob/prefix pattern (e.g. `alg/server/*`), avoids fetching all sources and filtering client-side
+22. Add `get_summary` tool — single-call overview returning source count, table count, database count, class/interface/procedure breakdown
+23. Add `search_run_references` tool — find sources that RUN a given program by name, direct reverse lookup without requiring source to exist in dataset
+24. Add `search_class_references` tool — find sources that instantiate or invoke a given class by class name
+25. Add `list_interfaces` tool — list all interfaces defined in the dataset
+
+### Phase 5 — Polish
 17. Add MCP server info (name, version) from build vars
 18. Update README with MCP usage and VS Code config example
 19. Verify both transports work end-to-end
