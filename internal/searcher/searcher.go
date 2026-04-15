@@ -418,6 +418,253 @@ func (s *Searcher) GetReverseDependencies(source string) *ReverseDependencies {
 	return rd
 }
 
+// MigrationScope holds the transitive set of related sources starting from a given source.
+type MigrationScope struct {
+	StartSource string   `json:"startSource"`
+	Sources     []string `json:"sources"`
+	Tables      []string `json:"tables"`
+}
+
+// GetMigrationScope performs a BFS graph traversal starting from a source,
+// following shared tables, class hierarchy, and include chains to find the
+// transitive set of related sources.
+func (s *Searcher) GetMigrationScope(source string) *MigrationScope {
+	xf := s.GetSourceByName(source)
+	if xf == nil {
+		return nil
+	}
+
+	visitedSources := map[string]bool{}
+	visitedTables := map[string]bool{}
+	queue := []string{xf.SourceFile}
+	visitedSources[strings.ToLower(xf.SourceFile)] = true
+
+	for len(queue) > 0 {
+		current := queue[0]
+		queue = queue[1:]
+
+		cur := s.GetSourceByName(current)
+		if cur == nil {
+			continue
+		}
+
+		// Collect tables from this source and find other sources sharing them
+		for _, table := range cur.Tables {
+			tKey := strings.ToLower(table.Database + "." + table.Name)
+			if !visitedTables[tKey] {
+				visitedTables[tKey] = true
+				// Find all sources that reference this table
+				refs := s.GetTableReferences(table.Name, nil, nil, nil)
+				for _, ref := range refs {
+					lower := strings.ToLower(ref.SourceFile)
+					if !visitedSources[lower] {
+						visitedSources[lower] = true
+						queue = append(queue, ref.SourceFile)
+					}
+				}
+			}
+		}
+
+		// Follow includes
+		for _, inc := range cur.Includes {
+			refs := s.GetIncludeReferences(inc)
+			for _, ref := range refs {
+				lower := strings.ToLower(ref.SourceFile)
+				if !visitedSources[lower] {
+					visitedSources[lower] = true
+					queue = append(queue, ref.SourceFile)
+				}
+			}
+		}
+
+		// Follow class hierarchy
+		var className string
+		if cur.Class != nil {
+			className = cur.Class.Name
+		} else if cur.Interface != nil {
+			className = cur.Interface.Name
+		}
+		if className != "" {
+			hierarchy := s.GetClassHierarchy(className)
+			for _, entry := range hierarchy {
+				if entry.Source != "" {
+					lower := strings.ToLower(entry.Source)
+					if !visitedSources[lower] {
+						visitedSources[lower] = true
+						queue = append(queue, entry.Source)
+					}
+				}
+			}
+			// Also find implementors/subclasses
+			for _, other := range s.xreffiles {
+				if other.Class != nil {
+					for _, parent := range other.Class.Inherits {
+						if strings.EqualFold(parent, className) {
+							lower := strings.ToLower(other.SourceFile)
+							if !visitedSources[lower] {
+								visitedSources[lower] = true
+								queue = append(queue, other.SourceFile)
+							}
+						}
+					}
+					for _, iface := range other.Class.Implements {
+						if strings.EqualFold(iface, className) {
+							lower := strings.ToLower(other.SourceFile)
+							if !visitedSources[lower] {
+								visitedSources[lower] = true
+								queue = append(queue, other.SourceFile)
+							}
+						}
+					}
+				}
+				if other.Interface != nil {
+					for _, parent := range other.Interface.Inherits {
+						if strings.EqualFold(parent, className) {
+							lower := strings.ToLower(other.SourceFile)
+							if !visitedSources[lower] {
+								visitedSources[lower] = true
+								queue = append(queue, other.SourceFile)
+							}
+						}
+					}
+				}
+			}
+		}
+
+		// Follow RUN references (both directions)
+		for _, run := range cur.Runs {
+			if run.Dynamic {
+				continue
+			}
+			for _, other := range s.xreffiles {
+				if strings.EqualFold(other.SourceFile, run.Name) {
+					lower := strings.ToLower(other.SourceFile)
+					if !visitedSources[lower] {
+						visitedSources[lower] = true
+						queue = append(queue, other.SourceFile)
+					}
+				}
+			}
+		}
+
+		// Follow instantiates
+		for _, inst := range cur.Instantiates {
+			for _, other := range s.xreffiles {
+				if other.Class != nil && strings.EqualFold(other.Class.Name, inst) {
+					lower := strings.ToLower(other.SourceFile)
+					if !visitedSources[lower] {
+						visitedSources[lower] = true
+						queue = append(queue, other.SourceFile)
+					}
+				}
+			}
+		}
+	}
+
+	// Collect sorted results
+	var sources []string
+	for _, xf := range s.xreffiles {
+		if visitedSources[strings.ToLower(xf.SourceFile)] {
+			sources = append(sources, xf.SourceFile)
+		}
+	}
+	sort.Strings(sources)
+
+	var tables []string
+	for t := range visitedTables {
+		tables = append(tables, t)
+	}
+	sort.Strings(tables)
+
+	return &MigrationScope{
+		StartSource: xf.SourceFile,
+		Sources:     sources,
+		Tables:      tables,
+	}
+}
+
+// CrudMatrixEntry represents one cell in the CRUD matrix: a source's access pattern on a table.
+type CrudMatrixEntry struct {
+	Source  string `json:"source"`
+	Table   string `json:"table"`
+	Creates bool   `json:"creates"`
+	Reads   bool   `json:"reads"`
+	Updates bool   `json:"updates"`
+	Deletes bool   `json:"deletes"`
+}
+
+// CrudMatrix holds the full CRUD matrix for a set of sources.
+type CrudMatrix struct {
+	Sources []string          `json:"sources"`
+	Tables  []string          `json:"tables"`
+	Entries []CrudMatrixEntry `json:"entries"`
+}
+
+// GetCrudMatrix builds a table → {source, C/R/U/D} matrix for the given set of sources.
+// If sources is nil, all sources are included.
+func (s *Searcher) GetCrudMatrix(sources []string) *CrudMatrix {
+	tableSet := map[string]bool{}
+	var entries []CrudMatrixEntry
+	var includedSources []string
+
+	for _, xf := range s.xreffiles {
+		if sources != nil && !containsSourceFold(sources, xf.SourceFile) {
+			continue
+		}
+		if len(xf.Tables) == 0 {
+			continue
+		}
+		includedSources = append(includedSources, xf.SourceFile)
+		for _, table := range xf.Tables {
+			fullName := strings.ToLower(table.Database) + "." + table.Name
+			tableSet[fullName] = true
+			reads := !table.IsCreated && !table.IsUpdated && !table.IsDeleted
+			if table.IsCreated || table.IsUpdated || table.IsDeleted {
+				// If any write flag is set, it also reads (implicit in OpenEdge)
+				reads = true
+			}
+			entries = append(entries, CrudMatrixEntry{
+				Source:  xf.SourceFile,
+				Table:   fullName,
+				Creates: table.IsCreated,
+				Reads:   reads,
+				Updates: table.IsUpdated,
+				Deletes: table.IsDeleted,
+			})
+		}
+	}
+
+	sort.Strings(includedSources)
+
+	var tables []string
+	for t := range tableSet {
+		tables = append(tables, t)
+	}
+	sort.Strings(tables)
+
+	sort.Slice(entries, func(i, j int) bool {
+		if entries[i].Table != entries[j].Table {
+			return entries[i].Table < entries[j].Table
+		}
+		return entries[i].Source < entries[j].Source
+	})
+
+	return &CrudMatrix{
+		Sources: includedSources,
+		Tables:  tables,
+		Entries: entries,
+	}
+}
+
+func containsSourceFold(sources []string, source string) bool {
+	for _, s := range sources {
+		if strings.EqualFold(s, source) {
+			return true
+		}
+	}
+	return false
+}
+
 // Add merges xreffiles into the searcher, replacing existing entries by sourcefile.
 func (s *Searcher) Add(xreffiles []*models.XrefFile) {
 	for _, xf := range xreffiles {

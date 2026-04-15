@@ -28,6 +28,7 @@ func Run(input, transport string, port int) error {
 	registerSearchTools(server, s)
 	registerSourceTools(server, s)
 	registerDependencyTools(server, s)
+	registerMigrationTools(server, s)
 
 	switch transport {
 	case "stdio":

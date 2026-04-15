@@ -391,3 +391,176 @@ func TestGetReverseDependenciesInterface(t *testing.T) {
 		t.Errorf("expected at least 2 inheritedBy entries for IEmpty, got %v", rd.InheritedBy)
 	}
 }
+
+func TestGetMigrationScope(t *testing.T) {
+	s := setupSearcher(t)
+
+	scope := s.GetMigrationScope("db/customer.p")
+	if scope == nil {
+		t.Fatal("expected migration scope for db/customer.p")
+	}
+
+	if scope.StartSource != "db/customer.p" {
+		t.Errorf("expected startSource db/customer.p, got %s", scope.StartSource)
+	}
+
+	// Should include at least the starting source
+	if len(scope.Sources) == 0 {
+		t.Fatal("expected at least one source in migration scope")
+	}
+
+	// Should include Customer table
+	if len(scope.Tables) == 0 {
+		t.Fatal("expected at least one table in migration scope")
+	}
+
+	foundCustomerTable := false
+	for _, table := range scope.Tables {
+		if table == "sports2000.customer" {
+			foundCustomerTable = true
+			break
+		}
+	}
+	if !foundCustomerTable {
+		t.Errorf("expected sports2000.customer in tables, got %v", scope.Tables)
+	}
+}
+
+func TestGetMigrationScopeNotFound(t *testing.T) {
+	s := setupSearcher(t)
+
+	scope := s.GetMigrationScope("nonexistent.p")
+	if scope != nil {
+		t.Error("expected nil for nonexistent source")
+	}
+}
+
+func TestGetMigrationScopeSharedTables(t *testing.T) {
+	s := setupSearcher(t)
+
+	// db/customer.p and db/custorderline.p both reference Customer
+	// They should appear in each other's migration scope
+	scope := s.GetMigrationScope("db/customer.p")
+	if scope == nil {
+		t.Fatal("expected migration scope")
+	}
+
+	foundCustOrderLine := false
+	for _, src := range scope.Sources {
+		if src == "db/custorderline.p" {
+			foundCustOrderLine = true
+			break
+		}
+	}
+	if !foundCustOrderLine {
+		t.Errorf("expected db/custorderline.p in scope (shares Customer table), got %v", scope.Sources)
+	}
+}
+
+func TestGetMigrationScopeClassHierarchy(t *testing.T) {
+	s := setupSearcher(t)
+
+	// oo/Address.cls inherits from oo/AddressBase.cls, so they should be in scope together
+	scope := s.GetMigrationScope("oo/Address.cls")
+	if scope == nil {
+		t.Fatal("expected migration scope for oo/Address.cls")
+	}
+
+	foundBase := false
+	foundDeliver := false
+	for _, src := range scope.Sources {
+		if src == "oo/AddressBase.cls" {
+			foundBase = true
+		}
+		if src == "oo/DeliverAddress.cls" {
+			foundDeliver = true
+		}
+	}
+	if !foundBase {
+		t.Errorf("expected oo/AddressBase.cls in scope (parent class), got %v", scope.Sources)
+	}
+	if !foundDeliver {
+		t.Errorf("expected oo/DeliverAddress.cls in scope (child class), got %v", scope.Sources)
+	}
+}
+
+func TestGetCrudMatrix(t *testing.T) {
+	s := setupSearcher(t)
+
+	matrix := s.GetCrudMatrix(nil)
+
+	if len(matrix.Sources) == 0 {
+		t.Fatal("expected at least one source in CRUD matrix")
+	}
+
+	if len(matrix.Tables) == 0 {
+		t.Fatal("expected at least one table in CRUD matrix")
+	}
+
+	if len(matrix.Entries) == 0 {
+		t.Fatal("expected at least one entry in CRUD matrix")
+	}
+}
+
+func TestGetCrudMatrixFiltered(t *testing.T) {
+	s := setupSearcher(t)
+
+	matrix := s.GetCrudMatrix([]string{"db/customer.p"})
+
+	if len(matrix.Sources) != 1 {
+		t.Fatalf("expected 1 source, got %d: %v", len(matrix.Sources), matrix.Sources)
+	}
+
+	if matrix.Sources[0] != "db/customer.p" {
+		t.Errorf("expected db/customer.p, got %s", matrix.Sources[0])
+	}
+
+	// Should have Customer table entry
+	foundCustomer := false
+	for _, entry := range matrix.Entries {
+		if entry.Table == "sports2000.Customer" {
+			foundCustomer = true
+			if !entry.Reads {
+				t.Error("expected reads=true for Customer")
+			}
+			break
+		}
+	}
+	if !foundCustomer {
+		t.Error("expected Customer table in CRUD matrix entries")
+	}
+}
+
+func TestGetCrudMatrixCrudFlags(t *testing.T) {
+	s := setupSearcher(t)
+
+	// create-customer.p should have creates=true for Customer
+	matrix := s.GetCrudMatrix([]string{"db/create-customer.p"})
+
+	for _, entry := range matrix.Entries {
+		if entry.Table == "sports2000.Customer" {
+			if !entry.Creates {
+				t.Error("expected creates=true for create-customer.p on Customer")
+			}
+			return
+		}
+	}
+	t.Error("expected Customer table entry for create-customer.p")
+}
+
+func TestGetCrudMatrixDeleteFlags(t *testing.T) {
+	s := setupSearcher(t)
+
+	// delete-customer.p should have deletes=true for Customer
+	matrix := s.GetCrudMatrix([]string{"db/delete-customer.p"})
+
+	for _, entry := range matrix.Entries {
+		if entry.Table == "sports2000.Customer" {
+			if !entry.Deletes {
+				t.Error("expected deletes=true for delete-customer.p on Customer")
+			}
+			return
+		}
+	}
+	t.Error("expected Customer table entry for delete-customer.p")
+}
