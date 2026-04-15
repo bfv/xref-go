@@ -93,6 +93,16 @@ func (s *Searcher) GetSourceNames() []string {
 	return sources
 }
 
+// GetSourceByName returns the XrefFile for the given source file path, or nil if not found.
+func (s *Searcher) GetSourceByName(sourcefile string) *models.XrefFile {
+	for _, xf := range s.xreffiles {
+		if strings.EqualFold(xf.SourceFile, sourcefile) {
+			return xf
+		}
+	}
+	return nil
+}
+
 // GetTableReferences returns XrefFiles that reference the given table with optional CRUD filters.
 // Pass nil for a has* parameter to ignore that criterion.
 func (s *Searcher) GetTableReferences(tablename string, hasCreates, hasUpdates, hasDeletes *bool) []*models.XrefFile {

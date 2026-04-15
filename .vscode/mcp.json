@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "xref": {
+      "command": "${workspaceFolder}/build/xref.exe",
+      "args": ["mcp", "-i", "${workspaceFolder}/testcases/examples/xref.json"]
+    }
+  }
+}

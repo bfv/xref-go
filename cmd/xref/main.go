@@ -31,6 +31,7 @@ func main() {
 	rootCmd.AddCommand(commands.NewListCmd())
 	rootCmd.AddCommand(commands.NewShowCmd())
 	rootCmd.AddCommand(commands.NewMatrixCmd())
+	rootCmd.AddCommand(commands.NewMcpCmd())
 
 	if err := rootCmd.Execute(); err != nil {
 		fmt.Fprintln(os.Stderr, err)
