@@ -690,3 +690,161 @@ func containsSource(sources []string, source string) bool {
 	}
 	return false
 }
+
+// SearchSources returns source names matching a case-insensitive prefix or glob-like pattern.
+// Supports trailing wildcard only (e.g. "alg/server/" or "alg/server/*").
+func (s *Searcher) SearchSources(pattern string) []string {
+	pattern = strings.TrimSuffix(pattern, "*")
+	lower := strings.ToLower(pattern)
+
+	var result []string
+	for _, xf := range s.xreffiles {
+		if strings.HasPrefix(strings.ToLower(xf.SourceFile), lower) {
+			result = append(result, xf.SourceFile)
+		}
+	}
+	sort.Strings(result)
+	return result
+}
+
+// Summary holds an overview of the xref dataset.
+type Summary struct {
+	SourceCount    int `json:"sourceCount"`
+	TableCount     int `json:"tableCount"`
+	DatabaseCount  int `json:"databaseCount"`
+	ClassCount     int `json:"classCount"`
+	InterfaceCount int `json:"interfaceCount"`
+	ProcedureCount int `json:"procedureCount"`
+	IncludeCount   int `json:"includeCount"`
+}
+
+// GetSummary returns aggregate counts across the dataset.
+func (s *Searcher) GetSummary() *Summary {
+	tables := s.GetTableNames(nil)
+	databases := s.GetDatabaseNames(nil)
+
+	classCount := 0
+	interfaceCount := 0
+	procedureCount := 0
+	includeSet := map[string]bool{}
+
+	for _, xf := range s.xreffiles {
+		if xf.Class != nil {
+			classCount++
+		}
+		if xf.Interface != nil {
+			interfaceCount++
+		}
+		procedureCount += len(xf.Procedures)
+		for _, inc := range xf.Includes {
+			includeSet[strings.ToLower(inc)] = true
+		}
+	}
+
+	return &Summary{
+		SourceCount:    len(s.GetSourceNames()),
+		TableCount:     len(tables),
+		DatabaseCount:  len(databases),
+		ClassCount:     classCount,
+		InterfaceCount: interfaceCount,
+		ProcedureCount: procedureCount,
+		IncludeCount:   len(includeSet),
+	}
+}
+
+// GetRunReferences returns sources that RUN the given program name.
+func (s *Searcher) GetRunReferences(programName string) []string {
+	var result []string
+	for _, xf := range s.xreffiles {
+		for _, run := range xf.Runs {
+			if strings.EqualFold(run.Name, programName) {
+				result = append(result, xf.SourceFile)
+				break
+			}
+		}
+	}
+	sort.Strings(result)
+	return result
+}
+
+// ClassReference represents a source that references a class via instantiation, invocation, or inheritance.
+type ClassReference struct {
+	Source       string   `json:"source"`
+	Instantiates bool     `json:"instantiates"`
+	Invokes      bool     `json:"invokes"`
+	Inherits     bool     `json:"inherits"`
+	Implements   bool     `json:"implements"`
+	Methods      []string `json:"methods,omitempty"`
+}
+
+// GetClassReferences finds sources that reference a given class by name via instantiation, invocation, or inheritance.
+func (s *Searcher) GetClassReferences(className string) []ClassReference {
+	var result []ClassReference
+	for _, xf := range s.xreffiles {
+		ref := ClassReference{Source: xf.SourceFile}
+		found := false
+
+		for _, inst := range xf.Instantiates {
+			if strings.EqualFold(inst, className) {
+				ref.Instantiates = true
+				found = true
+				break
+			}
+		}
+
+		for _, inv := range xf.Invokes {
+			if strings.EqualFold(inv.Class, className) {
+				ref.Invokes = true
+				ref.Methods = inv.Methods
+				found = true
+				break
+			}
+		}
+
+		if xf.Class != nil {
+			for _, parent := range xf.Class.Inherits {
+				if strings.EqualFold(parent, className) {
+					ref.Inherits = true
+					found = true
+					break
+				}
+			}
+			for _, iface := range xf.Class.Implements {
+				if strings.EqualFold(iface, className) {
+					ref.Implements = true
+					found = true
+					break
+				}
+			}
+		}
+		if xf.Interface != nil {
+			for _, parent := range xf.Interface.Inherits {
+				if strings.EqualFold(parent, className) {
+					ref.Inherits = true
+					found = true
+					break
+				}
+			}
+		}
+
+		if found {
+			result = append(result, ref)
+		}
+	}
+	sort.Slice(result, func(i, j int) bool {
+		return result[i].Source < result[j].Source
+	})
+	return result
+}
+
+// GetInterfaceNames returns all interface names defined in the dataset.
+func (s *Searcher) GetInterfaceNames() []string {
+	var result []string
+	for _, xf := range s.xreffiles {
+		if xf.Interface != nil {
+			result = append(result, xf.Interface.Name)
+		}
+	}
+	sort.Strings(result)
+	return result
+}
