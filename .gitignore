@@ -35,3 +35,4 @@ build/
 dist/
 
 **/xref.json
+!testcases/xref.json
