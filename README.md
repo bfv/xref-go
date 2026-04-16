@@ -124,6 +124,67 @@ Item
 
 Use `--noreads` to exclude tables and sources that only have read references, keeping only those with create, update or delete operations.
 
+## MCP server
+
+The `xref mcp` command starts a [Model Context Protocol](https://modelcontextprotocol.io/) server, exposing the parsed xref data as tools for AI agents.
+
+```
+xref mcp [flags]
+```
+
+| Flag | Short | Default | Description |
+|------|-------|---------|-------------|
+| `--input` | `-i` | `xref.json` | Input JSON data file |
+| `--transport` | `-t` | `stdio` | Transport: `stdio` or `http` |
+| `--port` | `-p` | `8080` | HTTP port (only used with `--transport http`) |
+
+### Available tools
+
+| Tool | Description |
+|------|-------------|
+| `list_sources` | List all source files |
+| `list_tables` | List all database.table references |
+| `list_databases` | List all database names |
+| `list_interfaces` | List all interfaces |
+| `search_table_references` | Find sources referencing a table (with CRUD filters) |
+| `search_field_references` | Find sources referencing a field |
+| `search_database_references` | Find sources referencing a database |
+| `search_include_references` | Find sources that include a given file |
+| `search_implementations` | Find classes implementing an interface |
+| `search_sources` | Filter sources by glob/prefix pattern |
+| `search_run_references` | Find sources that RUN a given program |
+| `search_class_references` | Find sources that instantiate or invoke a class |
+| `get_source_details` | Full details for a source file |
+| `get_dependencies` | All dependencies of a source (tables, includes, runs, classes) |
+| `get_class_hierarchy` | Resolve full inheritance chain for a class |
+| `get_reverse_dependencies` | Find sources that depend on a given source |
+| `get_migration_scope` | Transitive closure of related sources for migration analysis |
+| `get_crud_matrix` | Source × table CRUD matrix for a set of sources |
+| `get_summary` | Dataset overview (source/table/database counts, type breakdown) |
+
+### VS Code configuration
+
+Add the following to your VS Code `settings.json` (or `.vscode/mcp.json`) to use xref as an MCP server:
+
+```json
+{
+  "mcp": {
+    "servers": {
+      "xref": {
+        "command": "xref",
+        "args": ["mcp", "--input", "${workspaceFolder}/xref.json"]
+      }
+    }
+  }
+}
+```
+
+For HTTP transport:
+
+```sh
+xref mcp --transport http --port 8080 --input xref.json
+```
+
 ## CI/CD example
 
 ```yaml

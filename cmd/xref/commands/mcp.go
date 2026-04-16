@@ -9,7 +9,7 @@ import (
 )
 
 // NewMcpCmd returns the mcp subcommand.
-func NewMcpCmd() *cobra.Command {
+func NewMcpCmd(version string) *cobra.Command {
 	cmd := &cobra.Command{
 		Use:   "mcp",
 		Short: "Start the MCP server",
@@ -23,7 +23,7 @@ func NewMcpCmd() *cobra.Command {
 				return fmt.Errorf("invalid transport %q: must be stdio or http", transport)
 			}
 
-			return mcpserver.Run(input, transport, port)
+			return mcpserver.Run(input, transport, version, port)
 		},
 	}
 

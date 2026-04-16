@@ -12,7 +12,7 @@ import (
 )
 
 // Run starts the MCP server with the given configuration.
-func Run(input, transport string, port int) error {
+func Run(input, transport, version string, port int) error {
 	xrefdata, err := datafile.Load(input)
 	if err != nil {
 		return err
@@ -21,7 +21,7 @@ func Run(input, transport string, port int) error {
 	s := searcher.NewSearcher(xrefdata)
 	server := mcp.NewServer(&mcp.Implementation{
 		Name:    "xref",
-		Version: "1.0.0",
+		Version: version,
 	}, nil)
 
 	registerListTools(server, s)

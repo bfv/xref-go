@@ -23,6 +23,10 @@ build-windows:
 build-linux:
 	env CGO_ENABLED=0 GOOS=linux GOARCH=amd64 go build -o $(BUILDDIR)/$(BINARY_LINUX) -ldflags "-X main.version=$(VERSION) -w -s" ./cmd/xref
 
+# Run MCP server (stdio)
+mcp:
+	$(GOCMD) run -ldflags "-X main.version=$(VERSION)" ./cmd/xref mcp
+
 # Test targets
 test:
 	$(GOTEST) -v ./...
